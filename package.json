@@ -1,0 +1,25 @@
+{
+    "name": "mc-agent-js",
+    "version": "13.2.29",
+    "description": "Industrial NodeJS Agent, we call it fungi0=soft shaped gw",
+    "main": "index.js",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=develop pm2 --no-daemon start ./bin/www --watch ",
+        "stage": "cross-env NODE_ENV=stage pm2 --no-daemon start ./bin/www --watch ",
+        "start": "node index.js",
+        "pkg": "pkg . --out-path=dist/"
+    },
+    "bin": {
+        "app": "./index.js"
+    },
+    "author": "fungi0",
+    "license": "SEE LICENSE in LICENSE.md",
+    "dependencies": {
+        "mqtt": "^4.0.0",
+        "log4js": "~6.3.0",
+        "node-schedule": "^1.3.2",
+        "net": "^1.0.2",
+        "jsmodbus": "^4.0.0",
+        "@mindconnect/mindconnect-nodejs": "^3.12.0"
+    }
+}

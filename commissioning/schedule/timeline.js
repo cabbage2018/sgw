@@ -145,6 +145,42 @@ let measureJob = setInterval(function() {
 ///wow, the problem is when shall we re-enable the removed devices?
 ///one way is setup another timer annealing!
 
+
+async function timeoutroutine () {
+    // try{
+    //     for(let i = 0; i < queueAugmentum.length; i ++) {
+    //         if(queueAugmentum[i].protocolChannel.Address.Category.toLowerCase()) {
+    //             if(queueAugmentum[i].removed) {
+    //                 continue;
+    //             }
+    //             await modbustcp.acquire(queueAugmentum[i])
+    
+    //             .then((resp)=>{
+    //                 console.log(resp)
+    //             })
+    
+    //             .catch((error)=>{
+    //                 // shall we remove such task from this queue to a badDevice queue?
+    //                 queueAugmentum[i].badDevice = queueAugmentum[i].badDevice + 1
+    //                 if(queueAugmentum[i].badDevice > 10) {
+    //                 unreachableDevice.push(queueAugmentum[i])
+    //                 queueAugmentum[i].removed = true
+    //                 }
+    //             })
+    //         }
+    //     }    
+    // } catch (error) {
+    //     ;
+    // }
+
+    console.log('***************************@!$#^%$_-', new Date())
+    /*let realtimeJob = */setTimeout( async function() {
+        await timeoutroutine
+    }, 0)
+}
+timeoutroutine();
+
+
 function scheduleObjectLiteralSyntax() {
     //dayOfWeek
     //month
@@ -165,7 +201,7 @@ function scheduleObjectLiteralSyntax() {
 scheduleObjectLiteralSyntax()
 
 setTimeout(function() {
-    console.log('定时器取消')
+    // console.log('定时器取消')
     heartbeatJob.cancel()
     // job = null
 }, 24 * 60 * 60 * 1000)

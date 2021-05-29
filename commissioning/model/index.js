@@ -1,36 +1,48 @@
 'use strict'
-let fs = require("fs");
+let fs = require("fs")
+let log4js = require('log4js')
+let log = log4js.getLogger('commissioning::model::index')
 let modelJsonObject = require('../../public/modeling/bigrefrigerator.xlsm.extracted.json')
-module.exports = {
-    modelJsonObject
-}
-/*
-{
-	"version": "2021/5/20 14:54:07",
-	"license": "2029-11-23T23:11:58.875Z",
-	"machines": [
-		{
-			"modelId": "SENTRON4200",
-			"description": "2021/5/20 14:54:07",
-			"category": "PROJECT_PLACEHOLDER_2021",
-			"dataPoints": [
-				{
-					"Id": 1000,
-					"description_CN": "功率因数",
-					"description": "Cos phi",
-					"unit": "1",
-					"datatype": "Float",
-					"scaling": 1,
-					"uri": "功率因数",
-					"protocolData": {
-						"functioncodes": 3,
-						"register": 69,
-						"quantity": 2,
-						"offset": 0,
-						"bits": 0,
-						"display": "{1: 'X'}{0: 'failure'}"
-					}
-                },
-                ...
 
-                */
+function lookup(modelNameString) {
+	for(let i = 0; i < modelJsonObject.machines.length; i ++) {
+		if(modelNameString.indexOf(modelJsonObject.machines[i])) {
+			const machine = modelJsonObject.machines[i]
+			return machine
+		}
+	}
+	return null
+}
+
+module.exports = {
+	modelJsonObject,
+	lookup: lookup
+}
+
+console.log(__dirname);
+
+(async function() {
+	let ruleString = `<html><body><table>`
+	ruleString += `<tr><th>Id</th><th>description</th><th>type</th><th>fc</th><th>register</th><th>quantity</th><th>offset</th><th>bits</th></tr>`
+
+	for (let i = 0; i < modelJsonObject.machines.length; i ++) {
+		let machine = modelJsonObject.machines[i]
+		for (let j = 0; j < machine.dataPoints.length; j ++) {
+			let sample = machine.dataPoints[j]
+			ruleString += `<tr><td>${sample.Id}</td> <td>${sample.description}</td> <td>${sample.datatype}</td> <td>${sample.protocolData.functioncodes}</td> <td>${sample.protocolData.register}</td> <td>${sample.protocolData.quantity}</td> <td>${sample.protocolData.offset}</td> <td>${sample.protocolData.bits}</td></tr>`
+		}
+	}
+
+	ruleString += `</table></body></html>`
+	let filename = ''
+	let candidateArray = (__dirname).split("\\")//.split("/")
+	console.log(candidateArray)
+
+	for(let k = 0; k < candidateArray.length; k = k + 1) {
+		filename = candidateArray[k]
+	}
+	let filepath = './public/' + filename + '.html'
+	console.log(filepath)
+	fs.writeFileSync(filepath, ruleString)//.toLocaleLowerCase()
+
+})()

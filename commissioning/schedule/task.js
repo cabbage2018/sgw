@@ -68,7 +68,7 @@ function peel(filefullpath) {
             nouveau.cache = rootcache
 
             let result = undefined
-            console.log(source.category.toLowerCase())
+            // console.log(source.category.toLowerCase())
             switch(source.category.toLowerCase()) {
               case "tariff":
                 nouveau.protocolChannel.Address.IntervalMilliseconds = 60*60*1000
@@ -138,3 +138,20 @@ module.exports = {
   unreachableDevice,
   queueAugmentum
 }
+
+;
+(async function(responseJsonObject) {
+	let ruleString = `<html><body><table>`
+	ruleString += `<tr><th>deviceId</th><th>modelId</th><th>protocolDescription</th></tr>`
+	for (let i = 0; i < responseJsonObject.length; i ++) {
+		let sample = responseJsonObject[i]
+		ruleString += `<tr><td>${sample.deviceId}</td> <td>${sample.modelId}</td> <td>${sample.protocolDescription}</td></tr>`
+	}
+  ruleString += `</table></body></html>`
+  
+  let outputRoot = './public/'
+	let candidateArray = (__dirname).split("\\")//'/'
+  let filename = candidateArray[candidateArray.length - 1]
+  let filepath = outputRoot + filename + '.html'
+	fs.writeFileSync(filepath, ruleString)
+})(queueAugmentum)

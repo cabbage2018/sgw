@@ -5,6 +5,22 @@ let log = log4js.getLogger('commissioning:decode:configure')
 let premier = require('./premier')
 let profileDictionary = new Map()
 let monitorRoot = './public/cache/'
+
+// Serialize, deserialize
+function serialize(dictionary, filepath) {
+	let array = Array.from(dictionary.entries())
+	let str = JSON.stringify(array)
+	let result = fs.writeFileSync(filepath, str, 'utf-8')
+	return array.length
+}
+
+function deserialize(filepath) {
+	let map = new Map(JSON.parse(fs.readFileSync(filepath, 'utf-8')))
+	return map
+}
+let recovery = './public/snapshot.json'
+let historyDictionary = deserialize(recovery);
+
 fs.watch(monitorRoot, function (event, filename) {
     if (event === "change") {
         if (filename) {
@@ -18,6 +34,7 @@ fs.watch(monitorRoot, function (event, filename) {
                         let handler = handlerArray[i]
                         premier.compile(datapoints)
                     }
+                    
                 } catch (error) {
                     throw new Error('Wrong operation in fs.watch(...)')
                 }
@@ -40,8 +57,10 @@ fs.watch(monitorRoot, function (event, filename) {
         }
     }
     return
-})
-module.exports.unittest = ()=>{
+});
+
+// static page
+(()=>{
     for (let entry of profileDictionary.entries()) {
         let key = entry[0],
         value = entry[1]
@@ -49,4 +68,4 @@ module.exports.unittest = ()=>{
     }
     log.debug(`profileDictionary.size = ${profileDictionary.size}`)
     return
-}
+})()

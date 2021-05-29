@@ -2,20 +2,21 @@
 let mqtt = require('mqtt')
 let log4js = require('log4js')
 let log = log4js.getLogger('cloud:mqtt:index')
-log.debug('log4js is activated')
+
 let {optionsConnect,
   optionsPublish,
   optionsSubscribe,
   subscribeTopicList,
 } = require('./configure.js')
+
 let coordinator =  
     mqtt.connect("mqtt://test.mosquitto.org:1883", optionsConnect)
     // mqtt.connect(optionsConnect)
 if(null !== coordinator) {
-  // log.debug('mqtt client now = ', coordinator)
 }
+
 coordinator.on('connect', function() {
-  // coordinator.subscribe(/*subscribeTopicList*/ '#', optionsSubscribe)
+  coordinator.subscribe(/*subscribeTopicList*/ '#', optionsSubscribe)
   log.trace('mqtt connected')
 })
 coordinator.on('message', function (topic, message, packet) {

@@ -18,7 +18,7 @@ let decode = require('../../decode');
 	const log = (text) => { console.log(`[${new Date().toISOString()}] ${text.toString()}`); };
 	const RETRYTIMES = 3; // retry the operation before giving up and throwing exception
 
-	log(fs.readFileSync("./private.key"));
+	// log(fs.readFileSync("./private.key"));
 
 	// onboarding the agent
 	// Check in the local agent state storage if agent is onboarded.

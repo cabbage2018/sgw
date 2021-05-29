@@ -4,290 +4,190 @@ let path = require('path');
 let log4js = require('log4js')
 let log = log4js.getLogger('commissioning::decode::premier')
 let schedule = require('node-schedule')
+let model = require('../model/')
 
 let rootdir = './public/cache/'
 let rootModeling = './public/modeling/'
 let rootDecode = './public/decode/'
 let historyDictionary = new Map();
-function tryparseFloat(byteStream) {	
-	try {
-		let result = byteStream.readFloatBE(0)
-		return result
+let sequenceNumber = 30000
 
-	} catch (error) {
-		return null
-	}
-}
-function tryparseDouble(byteStream) {
-	try {
-		let result = byteStream.readDoubleBE(0)
-		return result
-
-	} catch (error) {
-		return null
-	}
-}
-/*
-    Here support as long as 'LONG' at present, 64bit, 8 bytes, 16 hex digits like '6d 3f 2e 7b f0'
-    subInteger means from bit offset to bit length value
-    for example, bit offset = 0 and big length =32 means whole INT data type
-                 bit offset = [0::31] and bit length = 1 means one single bit position
-                 one bit value can be translated into boolean like true or false(syntax with semantic)
-          
-          datapoint.buffer = Buffer.from(rawdataObj.buffer);
-          datapoint.start = (realStart) * / *sizeof(int) / * / 2;
-          datapoint.counts = segment.registers * / * sizeof(int) / * / 2;
-          datapoint.qualityCode = "0";
-          datapoint.value = Number.MIN_VALUE;//NaN;
-          datapoint.typeIndicator = "STRING";
-  
-          -->>
-          datapoint.bitstart = 0..31;
-          datapoint.bitcounts = 1..32;
-    
-    ***
-    to flexibly handle any cases in work, after consideration I adopted the own way of parse INT/LONG
-    that is 'shift' and 'add'
-    not the original designed Buffer function (readInt32BE...) BE guess mean Big Endian
-    
-    now this way I can read 1 word INT from some strange device like Siemens SoftStarter
-  
-    at first this piece code cannot process the 2 butes INT and the above readInt32BE gave exception
-    after check the log message on screen I found this issue was caused by Buffer's function
-    so when facing bytesArray = [0x01, 0xea], this could be viewed as byte array of word
-    I simply move the BE to left: please remember the left most byte owns highest order
-    intValue = 0x01 << 0x8 : move the most significant byte to left, that is to implement the BE means
-    intValue = 0x01 << 0x8 + 0xea: get the full length value 
-  
-		actually thus this piece of new code could handle any bytes array until 8 - 64bits LONG for most computer
-		
-*/
-// Here support as long as 'INT' at present, 32bit, 4 bytes, 8 hex digits like '6d 3f 2e 7b f0'
-// Here support as long as 'LONG' at present, 64bit, 8 bytes, 16 hex digits like '6d 3f 2e 7b f0'
-function tryparseInt(byteStream) {
-	try {
-		let result = byteStream.readInt32LE()
-		return result
-
-	} catch (error) {
-		return null
-
-	}
-}
-function tryparseLong(byteStream) {
-	try {
-		let result = byteStream.readInt64LE()
-		return result
-
-	} catch (error) {
-		return null
-
-	}
-}
-function tryparseString() {
-	try {
-		let result = byteStream.toString('hex')	//utf-8
-		return result
-
-	} catch (error) {
-		return null
-
+function appendDictionaryQueue (key, value, matrix) {
+	let array = matrix.get(key)
+	if(array !== undefined) {
+		array.push(value)
+	} else {
+		matrix.set(key, [value])
 	}
 }
 
-let longIndex = (1 << 31)
-log.mark(longIndex, '***')
+function archive() {
+	let str = ''
 
-//MODBUS-TCP
+	for (let x of historyDictionary) {
+		str += x[0] + ', '
+
+		for(let j =0; j < x[1].length; j = j + 1) {
+			str += x[1][j] + ', '
+		}
+		str += '\n'
+	}
+	
+	let archpath = __filename + /*new Date().toISOString().replace(/[,.:/\\]/gi, "_") +*/'.archive.csv'
+	if (fs.existsSync(archpath)) {	
+		fs.appendFileSync(archpath, str, "utf-8")
+	} else {
+		fs.writeFileSync(archpath, str, 'utf-8')
+	}
+
+	historyDictionary = new Map()
+	str = null
+
+	return
+}
+
+//MODBUS
 function crossCompile(rawdataObj, modelObj) {
+	
 	// 1 register === 16bit word = 2 Byte = (sometime short)
 	const BytesPerRegister = 2;
+
 	if(rawdataObj === null 
 		|| rawdataObj === undefined 
 		|| modelObj === null 
 		|| modelObj === undefined
 		|| rawdataObj.request._body._start === undefined
-		|| rawdataObj.request._body._count === undefined){
+		|| rawdataObj.response._body._byteCount === undefined) {
 			throw new Error("error: rawdataObj === null || rawdataObj === undefined || modelObj === null || modelObj === undefined")
 	}
+	let decoded_item = []
 
-	let start = Number(rawdataObj.request._body._start)
-	let count = Number(rawdataObj.request._body._count)
+	// register coordinator
+	let rstart = Number(rawdataObj.request._body._start)
+	let rcount = Number(rawdataObj.request._body._count)
 
-	var focusBuffer = Buffer.from(rawdataObj.response._body._valuesAsBuffer);
-	let item = []
-	if(modelObj.dataPoints.length > 0) {
-		var facility = {};
-		facility.modelId = rawdataObj.modelId || "UNKNOWN-MODEL"
-		facility.item_id = rawdataObj.deviceId || "UNKNOWN"
-		facility.timestamp = new Date().toISOString()
-		facility._embedded = {}
+	for (let i = 0; i < modelObj.dataPoints.length; i += 1) {
+		// buffer/byte coordinator
+		let segment = modelObj.dataPoints[i]
+
+		let absolutestart = Number(segment.protocolData.address) - (rstart)
+		let bcount = Number(segment.protocolData.quantity) * BytesPerRegister
+		let bmargin = (rstart + rcount) - Number(segment.protocolData.address) - Number(segment.protocolData.quantity)
+
+		if(bstart >= 0 && bcount > 0 && bmargin >= 0) {
 		
-		for (let i = 0; i < modelObj.dataPoints.length; i += 1) {
-			let segment = modelObj.dataPoints[i]
-			let realignedOffset = Number(segment.protocolData.address) - (rawdataObjStart)
-			let realignedCount = Number(segment.protocolData.quantity)
+			let particle = {}
+			particle.modelId = rawdataObj.modelId || "UNKNOWN-MODEL"
+			particle.deviceId = rawdataObj.deviceId || "UNKNOWN"
+			particle.receivedAt = rawdataObj.resp.metrics.receivedAt
+			// Local time, display and calculate base
+			particle.decodedAt = new Date().toLocaleDateString()//.toISOString()//String or Object
+							
+			b_index = absolutestart * BytesPerRegister
+			b_count = bcount
+			var obuffer = Buffer.from(rawdataObj.response._body._valuesAsBuffer)
 			
-			if(realignedOffset >= 0 && realignedCount > 0) {
-				// now count align with bytes instead of registers
-				// actually this is real offset in register layout
-				segment.byteIndex = (realignedOffset) * BytesPerRegister
-				segment.byteCount = realignedCount * BytesPerRegister
-				/// check if the desired area exceeds the boundary?
-				const booleanBoundaryCheck = segment.byteIndex + segment.byteCount <= focusBuffer.length? true : false;
-				if(booleanBoundaryCheck) {
-					let particle = {}
-					let temp = focusBuffer.slice(segment.byteIndex, segment.byteIndex + segment.byteCount)	//buf.slice([start[, end]])
-					segment.buffer = Buffer.from(temp)
-					switch (segment.dataType.toUpperCase()) {
-						case "FLOAT":
-							particle.value = tryparseFloat(segment.buffer)
-						break;
-						case "DOUBLE":
-							particle.value = tryparseDouble(segment.buffer)
-						break;
-						case "INT":
-							particle.value = tryparseInt(segment.buffer)
-						break;
-						case "LONG":
-							particle.value = tryparseLong(segment.buffer)
-						break;
-						default:	///As 'String'
-							particle.value = tryparseString(segment.buffer)
-						break;
-					}
-					particle.internal_name = rawdataObj.deviceId || "UNKNOWN" + '/' + segment.Id
-					particle.name = segment.Id
-					particle.id = ++ globalCount
-					particle.display_name = segment.displayName
-					particle.display_value = particle.value + ' ' + segment.unit
-					particle.unit = segment.unit
-					particle.quality = 'valid'
-
-					item.push(particle)
-					log.info(particle)
-					///
-					let queueOfHistory = profilingDictionary.get(entity.internal_name)
-					if(queueOfHistory === null) {
-						profilingDictionary.set(entity.internal_name, [item.value])
-					} else {
-						queueOfHistory.push(item.value)
-						// profilingDictionary.set(entity.internal_name, queueOfHistory)
-					}
-					///
-				}
+			// boundary check
+			if(b_index + b_count > obuffer.length){
+				throw Error('b_index + b_count > obuffer.length, original buffer is too small!')
 			}
-		}
-		facility._embedded = item
+			
+			let tbuffer = obuffer.slice(b_index, b_index + b_count)	//buf.slice([start[, end]])
+			let dbuffer = Buffer.from(tbuffer)
 
-		if(item.length > 0) {
-			return facility
+			particle.identifier = segment.Id
+			particle.quality = 0x0
+			log.debug(dbuffer)
+			switch (segment.dataType.toUpperCase()) {
+
+				case "FLOAT":
+					particle.value = dbuffer.readFloatBE(0)
+				break;
+
+				case "DOUBLE":
+					particle.value = dbuffer.readDoubleBE(0)
+				break;
+
+				case "INT":
+					particle.value = dbuffer.readInt32LE()
+				break;
+
+				case "LONG":
+					particle.value = dbuffer.readInt64LE()
+				break;
+
+				default:	///As 'String'
+					particle.value = dbuffer.toString('hex')
+					particle.quality = 0x8000ffff
+				break;
+				///tbd: bits field, like 00, 01, 10, 11 field
+				///not hit, or missing this dataType?
+			}
+			sequenceNumber ++
+			particle.sequenceNumber = sequenceNumber
+			particle.name = segment.Id
+			particle.unit = segment.unit
+
+
+			decoded_item.push(particle)
+			log.warn(particle)
+
+			/// HD
+			appendDictionaryQueue(particle.identifier, particle.value, historyDictionary)
+
+			/// LIVE DA
+			profilingDictionary.set(particle.deviceId + particle.name, JSON.stringify({q: particle.quality, t: particle.receivedAt, v: particle.value}))
+			///
+
+		} else {
+			// No rule for parse, although content is captured
 		}
 	}
-	
-	return null
-}
-
-// Unit Test 
-function archive(timestampedAsList) {
-	for(let j =0; j < timestampedAsList.length; j = j + 1) {
-		let item = timestampedAsList[j]
-		///
-		let internal_name_entry = historyDictionary.get(item.internal_name)
-		if(internal_name_entry === null) {
-			historyDictionary.set(item.internal_name, new Map())
-			internal_name_entry = historyDictionary.get(item.internal_name)
-		} 
-		internal_name_entry.set(item.timestamp, item.value)
-	}
-
-	historyDictionary.forEach(function (value, key, map) {
-    console.log(value, key, map);
-	})
-	return
+	return decoded_item
 }
 
 function construct(modbusResponseJsonObject) {
-	let decodeDirectory = path.join(__dirname, modbusResponseJsonObject.cache)
-  // let decoder = JSON.parse(fs.readFileSync(decodePath, "utf8"))
-	let decodeFilepath = path.join(decodeDirectory, modbusResponseJsonObject.modelId + '.json')
-	let decodeJsonObj = JSON.parse(fs.readFileSync(decodeFilepath))
-  var rawData = JSON.parse(fs.readFileSync(rawdatapath, "utf8"))
-	let result = crossCompile(modbusResponseJsonObject, decodeJsonObj)
+	let result = null
+	const machine = model.lookup(modbusResponseJsonObject.modelId)
 
-	targetdir
-	
-	setTimeout(function() {
-			filenameString = path.join(filenameString, new Date().toISOString() + '.json')
-			fs.writeFileSync(filenameString, JSON.stringify(resultAsJsonObject), "utf-8")
-		}, 100
-	)
-}
-
-function archive() {
-	let readableString = '\n'
-	for (let x of profilingDictionary) {
-		let lineList = x[1]
-		let lineString = ''
-		for(let j =0; j < lineList.length; j = j + 1) {
-			lineString = lineString + lineList[j] + ', '
-		}
-		readableString = readableString + x[0] + lineString
-		lineString = null
+	if(machine !== null) {
+		result = crossCompile(modbusResponseJsonObject, machine)
 	}
-	
-	let filenameString = __filename +  toISOString().replace(/[,.:/\\]/gi, "_") + '.archive.csv'
-	if (!fs.existsSync(filenameString)) {
-			console.log('readableString->', readableString)
-			// fs.writeFileSync(filenameString, readableString, "utf-8")
-			fs.appendFileSync(filenameString, readableString, "utf-8")
-	}
-
-	console.log(`Profiling succeeded@ = ${new Date().toISOString()}`)
-	profilingDictionary = new Map()
-	return
+	return result
 }
-
 
 // Hourly re aligned
-let job = schedule.scheduleJob('00 */60 * * * *', function() {
+let job = schedule.scheduleJob('15 */60 * * * *', function() {
 	archive()
 	return
-})
+});
 
 setTimeout(function() {
-		console.log('定时器取消')
 		job.cancel();   
 	}, 1000 * 60 * 60 * 24 * 31
-)
+);
 
-let syst = new Date()
-historyDictionary.set(syst, new Map())
-let dyna = historyDictionary.get(syst)
-dyna.set(100, 'upper limit')
-log.debug(`historyDictionary.get(syst).size: ${historyDictionary.get(syst).size}`)
-
-console.log('------------------------------------***------------------------------------')
-/*
-{
-	"item_id": "05005288-3862-435f-abbb-b962c6a527f6",
-	"timestamp": "2021-03-15T09:49:27+01",
-	"count": 6,
-	"total": 6,
-	"_embedded": {
-		"item": [{
-			"internal_name": "V_LN/Inst/Value/L1N",
-			"name": "voltage_l1",
-			"id": 0,
-			"display_name": "Voltage L1-N",
-			"display_value": "227.4 V",
-			"value": "227.448",
-			"unit": "V",
-			"quality": "valid"
-		}...]
+let profile = async function(mapObject) {
+	let s = `<html><body><table>`
+	s += `<tr><th>key</th><th>value</th><th>value</th></tr>`
+	for (let y of mapObject) {
+		s += `<tr><td>${y[0]}</td> <td>${y[1]}</td></tr>`
 	}
+	s += `</table></body></html>`
+	let candidateArray = (__dirname).split("\\")//'/'
+	let filename = candidateArray[candidateArray.length - 1]	// index = length - 1
+	let filepath = './public/' + filename + '.html'
+	fs.writeFileSync(filepath, s)
+
+	return s
 }
-*/
+
+function html(){
+	return (profile)(historyDictionary)
+}
+
 module.exports = {
-	compile: crossCompile
+	construct: construct,
+	// compile: crossCompile,
+	html: html,
 }

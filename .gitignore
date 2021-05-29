@@ -1,6 +1,10 @@
 # Logs
 logs
 *.log
+*.key
+log/
+.mc/
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -40,6 +44,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+config/
+public/
 
 # TypeScript v1 declaration files
 typings/
@@ -103,6 +109,9 @@ dist
 # TernJS port file
 .tern-port
 
-logs/
-public/
-*.key
+
+# 
+node_modules/
+.env
+backup/
+#public/

@@ -1,0 +1,17 @@
+ 驱动器 D 中的卷是 Data
+ 卷的序列号是 B629-EB5F
+
+ D:\fieldagent\collections\eclipse-paho-mqtt-c-win64-1.3.9\include 的目录
+
+2021/12/15  15:30    <DIR>          .
+2021/12/15  15:30    <DIR>          ..
+2021/09/27  22:08            95,882 MQTTAsync.h
+2021/09/27  22:08            85,574 MQTTClient.h
+2021/09/27  22:08            11,559 MQTTClientPersistence.h
+2021/09/27  22:08             1,227 MQTTExportDeclarations.h
+2021/09/27  22:08             9,485 MQTTProperties.h
+2021/09/27  22:08             3,222 MQTTReasonCodes.h
+2021/09/27  22:08             1,847 MQTTSubscribeOpts.h
+2021/12/15  15:30                 0 out.txt
+               8 个文件        208,796 字节
+               2 个目录 101,727,473,664 可用字节

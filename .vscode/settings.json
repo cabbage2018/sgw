@@ -1,5 +1,7 @@
 {
   "files.associations": {
-    "io.h": "c"
+    "io.h": "c",
+    "stdint.h": "c",
+    "windef.h": "c"
   }
 }

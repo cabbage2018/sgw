@@ -5,7 +5,6 @@
 *
 ************************************************************************/
 
-#include"defs.h"
 #include <process.h>  
 #include <Windows.h>
 #include <locale.h>
@@ -15,8 +14,9 @@
 #include <time.h>
 #pragma warning(disable:4996)
 #include <io.h> //_finddata_t, _findfirst(), _findnext(), _findclose()
+#include"defs.h"
 extern const char*time_series_monitor_directory;
-extern const char*time_series_archive_directory;
+
 unsigned int workThreadId;
 HANDLE workThreadAliveSemaphore;
 HANDLE workThread;
@@ -59,13 +59,12 @@ char* str2low(char* str)/// ASCII ONLY
 // This program uses the 32-bit _find functions to print
 // a list of all files (and their attributes) with a .C extension
 // in the current directory.
-int scanFolder(const LPCWSTR lpwstr_dest_dir, const LPCWSTR lpwstr_src_dir)
-{
-  char dest[255] = { '\0' };
-  char source_dir[255] = { '\0' };
+int scanFolder(const LPCWSTR lpwstr_dest_dir, const LPCWSTR lpwstr_src_dir) {
+  wchar_t dest[255] = { '\0' };
+  wchar_t source_dir[255] = { '\0' };
 
-  swprintf_s(dest, 255, "%s%s", lpwstr_dest_dir, L"\\");
-  swprintf_s(source_dir, 255, "%s%s", lpwstr_src_dir, L"\\");
+  swprintf_s(dest, 255, L"%s%s", lpwstr_dest_dir, L"\\");
+  swprintf_s(source_dir, 255, L"%s%s", lpwstr_src_dir, L"\\");
 
   FILE *fp = fopen("C:\\Temp\\test2.txt", "w");
   if (NULL != fp) {
@@ -114,18 +113,9 @@ int scanFolder(const LPCWSTR lpwstr_dest_dir, const LPCWSTR lpwstr_src_dir)
   return 0;
 }
 
-int workerThread() {
-  char*arglist = "C:/Temp/";
-  workThread = (HANDLE)_beginthreadex(NULL, 0, (unsigned int(_stdcall *)(void *))synchronize_thread_for_folder, arglist, 0, &workThreadId);
-  if (NULL == workThread) {
-    printf("ERROR: Create work thread failed!\n");
-    return -1;
-  } else {
-    printf("INFO: Create work thread succeed!\n");
-    return 0;
-  }
+int startWorkThread() {
+	return 1;
 }
-
 void threading(void* input_string) {
   printf("TIMER ROUTINE <%s>", input_string);
   workThreadAliveSemaphore = CreateSemaphore(NULL, 1, 1, (LPCWSTR)"CreateSyncThreadSemaphore");
@@ -232,13 +222,13 @@ int try_write_text_file(const char*file_path, const char*string, const char*form
     char*time_stamp;
     time_t ticks;
     ticks = time(NULL);
-    try_generate_time_string_as_file_name(&ticks, &time_stamp);
+    //try_generate_time_string_as_file_name(&ticks, &time_stamp);
 
     strcat(saving_path, time_stamp);
     strcat(saving_path, "-");
 
     char filename[260] = { '\0' };
-    attribute_file_name(file_path, filename);
+    //attribute_file_name(file_path, filename);
     strcat(saving_path, filename);
 
     free(time_stamp);
@@ -265,7 +255,7 @@ int try_write_text_file(const char*file_path, const char*string, const char*form
 // in the current directory.
 int scan_folder(const char *source_dir/*, const char*destinated_dir*/) {
   // claim
-  if (_access(source_dir, 0) == -1 /*|| _access(destinated_dir, 0) ==-1*/) {
+  if (_access(source_dir, 0) == -1 /*|| _access(destinated_dir, 0) ==-s1*/) {
     return -1;
   }
 
@@ -297,10 +287,10 @@ int scan_folder(const char *source_dir/*, const char*destinated_dir*/) {
       strcat_s(source_file, _countof(source_file), c_file.name);
 
       // process
-      int result = process_json_timeseries_file(source_dir, c_file.name);
+	  int result = 0;//process_json_timeseries_file(source_dir, c_file.name);
 
       char destinated_file[255] = { '\0' };
-      strcpy_s(destinated_file, _countof(destinated_file), time_series_archive_directory);
+      //strcpy_s(destinated_file, _countof(destinated_file), time_series_archive_directory);
       strcat_s(destinated_file, _countof(destinated_file), c_file.name);
 
       // remove file; override destinated if the file with same name exists
@@ -313,13 +303,6 @@ int scan_folder(const char *source_dir/*, const char*destinated_dir*/) {
   }
 
   return result;
-}
-
-void synchronize_thread_for_folder(void *param) {
-  // process json time series in specific
-  scan_folder(time_series_monitor_directory);
-  // leave a sensor time series for next round uploading
-  generate_random_json_sensor_ts(time_series_monitor_directory);
 }
 
 int request() {
@@ -436,4 +419,26 @@ int showSubfolder(char* dir) {
     printf("dir: <%s>", dir);
     _mkdir(dir);
   }
+}
+
+
+void synchronize_thread_for_folder(void *param) {
+	// process json time series in specific
+	scan_folder("c:\\temp");
+	// leave a sensor time series for next round uploading
+	//generate_random_json_sensor_ts(time_series_monitor_directory);
+}
+
+
+int workerThread() {
+	char*arglist = "C:/Temp/";
+	workThread = (HANDLE)_beginthreadex(NULL, 0, (unsigned int(_stdcall *)(void *))synchronize_thread_for_folder, arglist, 0, &workThreadId);
+	if (NULL == workThread) {
+		printf("ERROR: Create work thread failed!\n");
+		return -1;
+	}
+	else {
+		printf("INFO: Create work thread succeed!\n");
+		return 0;
+	}
 }

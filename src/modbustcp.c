@@ -1,18 +1,18 @@
-#include <stdio.h>
-#ifndef _MSC_VER
-#include <unistd.h>
-#endif
-#include <string.h>
-#include <stdlib.h>
-#include <errno.h>
 #ifndef _MSC_VER
 #include <stdint.h>
+#include <unistd.h>
 #else
 #include "stdint.h"
 #endif
-#include "modbus/modbus.h"
-#include <windef.h>
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #include <errno.h>
+#include <windef.h>
+
+#include "modbus/modbus.h"
+
 typedef void(*cbfBits)(const uint16_t*, const int);
 typedef void(*cbfRegs)(const uint16_t*, const int);
 
@@ -113,6 +113,7 @@ void runOnce(const char* host, const int port, const int subordinator,
 
     switch (fc) {
         case 0x17:
+			;
             uint16_t* buf = (uint16_t *) malloc(count * sizeof(uint16_t));
             memset(buf, 0, count * sizeof(uint16_t));
             rc = modbus_write_and_read_registers(ctx, addr, count,
@@ -137,27 +138,30 @@ void runOnce(const char* host, const int port, const int subordinator,
             rc = modbus_write_bit(ctx, writeAddr, bits[0]);
         break;
 
-        case 4:            
-            uint16_t* buf = (uint16_t *) malloc(count * sizeof(uint16_t));
-            memset(buf, 0, count * sizeof(uint16_t));
-            rc = modbus_read_input_registers(ctx, addr, count, buf);
-            if(rc == 1) {
-                onReceieRegisters(buf, count);
-            }
-            free(buf);
-        break;
+		case 4: {
+			uint16_t* buf = (uint16_t *)malloc(count * sizeof(uint16_t));
+			memset(buf, 0, count * sizeof(uint16_t));
+			rc = modbus_read_input_registers(ctx, addr, count, buf);
+			if (rc == 1) {
+				onReceieRegisters(buf, count);
+			}
+			free(buf);
+			break;
+		}
 
-        case 3:
-            uint16_t* buf = (uint16_t *) malloc(count * sizeof(uint16_t));
-            memset(buf, 0, count * sizeof(uint16_t));
-            rc = modbus_read_registers(ctx, addr, count, buf);
-            if(rc == 1) {
-                onReceieRegisters(buf, count);
-            }
-            free(buf);
-        break;
+		case 3: {		
+			uint16_t* buf = (uint16_t *)malloc(count * sizeof(uint16_t));
+			memset(buf, 0, count * sizeof(uint16_t));
+			rc = modbus_read_registers(ctx, addr, count, buf);
+			if (rc == 1) {
+				onReceieRegisters(buf, count);
+			}
+			free(buf);
+			break;
+		}
 
         case 2:
+			;
             uint8_t *bits;
             bits = (uint8_t *) malloc(count * sizeof(uint8_t));
             memset(bits, 0, count * sizeof(uint8_t));
@@ -168,16 +172,17 @@ void runOnce(const char* host, const int port, const int subordinator,
             free(bits);
         break;
 
-        case 1:
-            uint8_t *bits;
-            bits = (uint8_t *) malloc(count * sizeof(uint8_t));
-            memset(bits, 0, count * sizeof(uint8_t));
-            rc = modbus_read_bits(ctx, addr, 1, bits);
-            if(rc == 1) {
-                onReceieBits(bits, count);
-            }
-            free(bits);
-        break;
+		case 1: {
+			uint8_t *bits;
+			bits = (uint8_t *)malloc(count * sizeof(uint8_t));
+			memset(bits, 0, count * sizeof(uint8_t));
+			rc = modbus_read_bits(ctx, addr, 1, bits);
+			if (rc == 1) {
+				onReceieBits(bits, count);
+			}
+			free(bits);
+			break;
+		}
 
         default:
             fprintf(stderr, "Error function code :%d not valid\n", fc);

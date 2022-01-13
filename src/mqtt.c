@@ -9,21 +9,26 @@
  */
 
 #define HAVE_STRUCT_TIMESPEC
-#include <pthread.h>
 
-#include "../lib/cJSON/cJSON.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "pahoc/MQTTClient.h"
-#include "../include/pthread/pthread.h"
-#include "../include/itag/config.h"
-#include "defs.h"
 #if !defined(WIN32)
 #include <unistd.h>
 #else
 #include <windows.h>
 #endif
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include <stddef.h>
+#include <stdint.h>
+#include <time.h>
+
+#include "pahoc/MQTTClient.h"
+#include "../include/pthread/pthread.h"
+#include "../include/itag/config.h"
+#include "../lib/cJSON/cJSON.h"
+#include "defs.h"
 int CONNECT = 1;
 volatile MQTTClient_deliveryToken deliveredtoken;
 void msgDelivered(void *context, MQTTClient_deliveryToken dt)

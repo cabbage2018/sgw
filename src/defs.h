@@ -13,9 +13,9 @@
 
 // #include "mcl_core/mcl_config_setup.h"
 
-#include <stddef.h>
-#include <stdint.h>
-#include <time.h>
+#ifdef _MSC_VER
+#pragma once
+#endif // _MSC_VER
 
 #ifdef  __cplusplus
 extern "C"
@@ -23,6 +23,7 @@ extern "C"
 #endif
 
 typedef size_t fieag_size_t;
+/*
 typedef int8_t mcl_int8_t;
 typedef int16_t mcl_int16_t;
 typedef int32_t mcl_int32_t;
@@ -34,7 +35,7 @@ typedef uint64_t mcl_uint64_t;
 typedef mcl_uint8_t mcl_bool_t;
 typedef time_t mcl_time_t;
 typedef mcl_int32_t mcl_error_t;
-
+*/
 #define NUM_THREADS 2
 #define ADDRESS "tcp://localhost:1883" //更改此处地址
 #define CLIENTID "aaabbbccc_pub" //更改此处客户端ID
@@ -144,7 +145,7 @@ typedef enum E_FIEAG_RETURN_CODE
 // Deprecated error code. Kept for backward compatibility.
 #define FIEAG_NON_EXISTING_JSON_CHILD FIEAG_JSON_NON_EXISTING_CHILD
 
-extern MCL_EXPORT const char *mcl_core_return_code_strings[FIEAG_CORE_RETURN_CODE_END];
+extern const char *mcl_core_return_code_strings[FIEAG_CORE_RETURN_CODE_END];
 
 // This function converts the given return code to its string value for core module.
 #define FIEAG_CORE_CODE_TO_STRING(code) (code < FIEAG_CORE_RETURN_CODE_END ? mcl_core_return_code_strings[code] : NULL)
@@ -163,7 +164,7 @@ extern MCL_EXPORT const char *mcl_core_return_code_strings[FIEAG_CORE_RETURN_COD
  * <li>#FIEAG_CREDENTIALS_NOT_LOADED if credentials can not be loaded, all parameters must be set to NULL.</li>
  * </ul>
  */
-typedef mcl_error_t (*mcl_credentials_load_shared_secret_callback_t)(char **client_id, char **client_secret, char **registration_access_token, char **registration_uri);
+typedef int (*mcl_credentials_load_shared_secret_callback_t)(char **client_id, char **client_secret, char **registration_access_token, char **registration_uri);
 
 /**
  *
@@ -179,7 +180,7 @@ typedef mcl_error_t (*mcl_credentials_load_shared_secret_callback_t)(char **clie
  * <li>#FIEAG_CREDENTIALS_NOT_SAVED if credentials can not be saved.</li>
  * </ul>
  */
-typedef mcl_error_t (*mcl_credentials_save_shared_secret_callback_t)(const char *client_id, const char *client_secret, const char *registration_access_token,
+typedef int (*mcl_credentials_save_shared_secret_callback_t)(const char *client_id, const char *client_secret, const char *registration_access_token,
     const char *registration_uri);
 
 /**
@@ -196,7 +197,7 @@ typedef mcl_error_t (*mcl_credentials_save_shared_secret_callback_t)(const char 
  * <li>#FIEAG_CREDENTIALS_NOT_LOADED if credentials can not be loaded, all parameters must be set to NULL.</li>
  * </ul>
  */
-typedef mcl_error_t (*mcl_credentials_load_rsa_callback_t)(char **client_id, char **public_key, char **private_key, char **registration_access_token, char **registration_uri);
+typedef int (*mcl_credentials_load_rsa_callback_t)(char **client_id, char **public_key, char **private_key, char **registration_access_token, char **registration_uri);
 
 /**
  * This is a callback function prototype to save credentials for RSA security profile.
@@ -212,7 +213,7 @@ typedef mcl_error_t (*mcl_credentials_load_rsa_callback_t)(char **client_id, cha
  * <li>#FIEAG_CREDENTIALS_NOT_SAVED if credentials can not be saved.</li>
  * </ul>
  */
-typedef mcl_error_t (*mcl_credentials_save_rsa_callback_t)(const char *client_id, const char *public_key, const char *private_key, const char *registration_access_token,
+typedef int (*mcl_credentials_save_rsa_callback_t)(const char *client_id, const char *public_key, const char *private_key, const char *registration_access_token,
     const char *registration_uri);
 
 /**
@@ -243,7 +244,7 @@ typedef union mcl_credentials_save_callback_t
  * <li>#FIEAG_CANNOT_ENTER_CRITICAL_SECTION if cannot enter critical section.</li>
  * </ul>
  */
-typedef mcl_error_t (*mcl_critical_section_enter_callback_t)(void);
+typedef int (*mcl_critical_section_enter_callback_t)(void);
 
 /**
  *

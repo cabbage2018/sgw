@@ -4,12 +4,13 @@
 #include <stdio.h>
 #include "list.h"
 
-int init(struct list* List/*, int memSize*/){
-  struct list *List = malloc(sizeof(struct list));
+int init(struct list** List/*, int memSize*/){
+  struct list *l = malloc(sizeof(struct list));
   //ASSERT_NOT_NULL(List, code);
-  List->count = 0;
-  List->head = NULL;
-  List->memsize = sizeof(struct list*);
+  l->count = 0;
+  l->head = NULL;
+  l->memsize = sizeof(struct list*);
+  *List = l;
 }
 
 // not possible when do this in geneirc template manner
@@ -67,7 +68,7 @@ iterator insert(struct list* List, void *data, iterator itBefore, void (*assign)
   return (struct node**)&new_node;
 }
 
-iterator remove(struct list* List, iterator it) {
+iterator remove2(struct list* List, iterator it) {
   iterator moved = NULL;
   if(List->head) {
     // not empty

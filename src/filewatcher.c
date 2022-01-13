@@ -1,20 +1,16 @@
 //https://developersarea.wordpress.com/2014/09/26/win32-file-watcher-api-to-monitor-directory-changes/
-#include <Winbase.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <tchar.h>
-#include <io.h>
-#include "cJSON.h"
-#include "defs.h"
 #if !defined(WIN32)
 #include <unistd.h>
 #else
+//#include <Winbase.h>
 #include <windows.h>
 #endif
 
+//#include "cJSON.h"
 #define MAX_DIRS 25
 #define MAX_FILES 255
 #define MAX_BUFFER 4096
+/*
 extern WINBASEAPI BOOL WINAPI ReadDirectoryChangesW(
   HANDLE hDirectory,
   LPVOID lpBuffer, DWORD nBufferLength,
@@ -23,6 +19,11 @@ extern WINBASEAPI BOOL WINAPI ReadDirectoryChangesW(
   LPOVERLAPPED lpOverlapped,
   LPOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine
 );
+*/
+#include <stdlib.h>
+#include <stdio.h>
+#include <tchar.h>
+#include <io.h>
 
 // all purpose structure to contain directory information and provide
 // the input buffer that is filled with file change data
@@ -56,10 +57,10 @@ void WatchDirectory2(LPCWSTR path) {
   }
 
   lstrcpy(DirInfo[0].lpszDirName, path);
-  OVERLAPPED PollingOverlap;
 
   FILE_NOTIFY_INFORMATION* pNotify;
   int offset;
+  OVERLAPPED PollingOverlap;
   PollingOverlap.OffsetHigh = 0;
   PollingOverlap.hEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
   while (result)

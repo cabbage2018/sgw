@@ -17,8 +17,20 @@ void assign(void *d1, const void *d2) {
 	strncpy(r1->key, 64, r2->key);
 	r1->len = r2->len;
 	memcpy(r1->value, 64, r2->value);
+}
 
-	return;
+int condition(const void *d1, const void *d2) {
+	struct wrapdata *r1 = (struct wrapdata*)d1;
+	struct wrapdata *r2 = (struct wrapdata*)d2;
+	return strcmp(r1->value, r2->value) < 0? 1 : 0;
+	return r1->value < r2->value ? 1 : 0;
+}
+
+void equal(void *d1, const void *d2) {
+	struct wrapdata *r1 = (struct wrapdata*)d1;
+	struct wrapdata *r2 = (struct wrapdata*)d2;
+	return strcmp(r1->value, r2->value) == 0 ? 1 : 0;
+	return r1->value == r2->value ? 1 : 0;
 }
 
 void traverse() {
@@ -32,11 +44,12 @@ void traverse() {
 
 	strncpy(w->key, 32, "key-for-node2");
 	iterator result = insert(List, (void *)w, List->head, assign);
-	struct node *cur = List->head;
+	
+	iterator cur = &List->head;
 
 	for (int index = 0; (0 == code) && (index < List->count); ++index) {
-		printf("%p", ((struct wrapdata*)(cur->data))->value);
-		code = getNext(&cur);
+		printf("%p", ((struct wrapdata*)((*cur)->data))->value);
+		code = getNext(cur);
 	}
 }
 

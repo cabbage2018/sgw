@@ -9,7 +9,7 @@ int init(struct list** List/*, int memSize*/){
   //ASSERT_NOT_NULL(List, code);
   l->count = 0;
   l->head = NULL;
-  l->memsize = sizeof(struct list*);
+  l->memsize = sizeof(struct list);
   *List = l;
 }
 
@@ -25,7 +25,7 @@ int init(struct list** List/*, int memSize*/){
 
 // append data to tail
 iterator append(struct list* List, void *data, void (*assign)(void*, const void*)) {
-  struct node *new_node = (struct node *)malloc(sizeof(struct node *));
+  struct node *new_node = (struct node *)malloc(sizeof(struct node));
   // enum CODE code = CODE_OK;
   // MCL_ASSERT_CODE_MESSAGE(List->count < LIST_LENGTH_MAX, LIST_LIMIT_EXCEEDED, "Index of the list is already at the maximum value. Not adding the new data!");
   // MCL_NEW(new_node);
@@ -49,7 +49,7 @@ iterator append(struct list* List, void *data, void (*assign)(void*, const void*
 }
 
 iterator insert(struct list* List, void *data, iterator itBefore, void (*assign)(void*, const void*)) {
-  struct node *new_node = (struct node *)malloc(sizeof(struct node *));
+  struct node *new_node = (struct node *)malloc(sizeof(struct node));
   (*assign)(new_node->data, data);
   new_node->last = new_node;
   new_node->next = new_node;
@@ -128,7 +128,7 @@ int removeFirst(struct list* List, iterator it) {
 
       List->head = head2;
       List->count -= 1;
-      List->memsize -= sizeof(struct node*);
+      List->memsize -= sizeof(struct node);
     }
     result += 1;
   }
@@ -156,7 +156,7 @@ int removeLast(struct list* List, iterator it) {
       removed->last = NULL;
 
       List->count -= 1;
-      List->memsize -= sizeof(struct node*);
+      List->memsize -= sizeof(struct node);
     }
     result += 1;
   }
@@ -227,16 +227,20 @@ iterator end(struct list* List) {
   return & List->head->last;
 }
 
-iterator getNext(iterator it) {
+iterator getNext(struct list* List, iterator it) {
   if(it && (struct node*)(*it)->next) {
-    return & ((*it)->next);
+	  if (*it == List->head) {
+		  return NULL;
+	  } else {
+		  return &((*it)->next);
+	  }
   } else {
     printf("Input is NULL!");
     return NULL;
   }
 }
 
-iterator getLast(iterator it) {
+iterator getLast(struct list* List, iterator it) {
   if(it && (struct node*)(*it)->last) {
     return (struct node**) &(*it)->last;
   } else {

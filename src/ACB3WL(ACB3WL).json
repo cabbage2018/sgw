@@ -1,0 +1,5818 @@
+[
+	{
+		"index": 18400,
+		"segment": "register",
+		"register": 17411,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "time",
+		"desc": "System time of the circuit breaker"
+	},
+	{
+		"index": 18401,
+		"segment": "register",
+		"register": 17409,
+		"count": 1,
+		"fc": 6,
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"hexcontent": "65432",
+		"desc": "Header; value 0x00 00 00 00"
+	},
+	{
+		"index": 18402,
+		"segment": "register",
+		"register": 17410,
+		"count": 1,
+		"fc": 6,
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"hexcontent": "0X010203",
+		"desc": "Header; value 0x00 00 00 00"
+	},
+	{
+		"index": 18403,
+		"segment": "register",
+		"register": 13057,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (15)",
+		"desc": "last 5 tripping operations-1"
+	},
+	{
+		"index": 18404,
+		"segment": "register",
+		"register": 13063,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (15)",
+		"desc": "last 5 tripping operations-2"
+	},
+	{
+		"index": 18405,
+		"segment": "register",
+		"register": 13069,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (15)",
+		"desc": "last 5 tripping operations-3"
+	},
+	{
+		"index": 18406,
+		"segment": "register",
+		"register": 13075,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (15)",
+		"desc": "last 5 tripping operations-4"
+	},
+	{
+		"index": 18407,
+		"segment": "register",
+		"register": 13081,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (15)",
+		"desc": "last 5 tripping operations-5"
+	},
+	{
+		"index": 18408,
+		"segment": "register",
+		"register": 13087,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-1"
+	},
+	{
+		"index": 18409,
+		"segment": "register",
+		"register": 13093,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-2"
+	},
+	{
+		"index": 18410,
+		"segment": "register",
+		"register": 13099,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-3"
+	},
+	{
+		"index": 18411,
+		"segment": "register",
+		"register": 13105,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-4"
+	},
+	{
+		"index": 18412,
+		"segment": "register",
+		"register": 13111,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-5"
+	},
+	{
+		"index": 18413,
+		"segment": "register",
+		"register": 13117,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-1"
+	},
+	{
+		"index": 18414,
+		"segment": "register",
+		"register": 13123,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-2"
+	},
+	{
+		"index": 18415,
+		"segment": "register",
+		"register": 13129,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-3"
+	},
+	{
+		"index": 18416,
+		"segment": "register",
+		"register": 13135,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-4"
+	},
+	{
+		"index": 18417,
+		"segment": "register",
+		"register": 13141,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Format (16)",
+		"desc": "last 5 tripping operations-5"
+	},
+	{
+		"index": 18418,
+		"segment": "register",
+		"register": 13147,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "Status of the connected Modbus",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "FORMAT(18)",
+		"desc": "Controls the commands/functions of the communication module (e.g. clear or reset min./max. values)"
+	},
+	{
+		"index": 18419,
+		"segment": "register",
+		"register": 13148,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "FORMAT(373)",
+		"desc": "Controls the outputs of thecommunication module (e.g.switching the breaker)"
+	},
+	{
+		"index": 18420,
+		"segment": "register",
+		"register": 13148,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "INT",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18421,
+		"segment": "register",
+		"register": 13149,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"scaling": "-3",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "SIGNEDINT",
+		"desc": "Average power factor, 3-phase"
+	},
+	{
+		"index": 18422,
+		"segment": "register",
+		"register": 13150,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Unsigned int",
+		"desc": "Current in phase with maximum load"
+	},
+	{
+		"index": 18423,
+		"segment": "register",
+		"register": 13151,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Unsigned int",
+		"desc": "Time until presumed overload trip"
+	},
+	{
+		"index": 18424,
+		"segment": "register",
+		"register": 13152,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Unsigned int",
+		"desc": "Current in neutral conductor"
+	},
+	{
+		"index": 18425,
+		"segment": "register",
+		"register": 13153,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Unsigned int",
+		"desc": "Current which flows to ground Ground current"
+	},
+	{
+		"index": 18426,
+		"segment": "register",
+		"register": 13154,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "TIME",
+		"desc": "System time of the circuit breaker"
+	},
+	{
+		"index": 18427,
+		"segment": "register",
+		"register": 13158,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "FORMAT(24)",
+		"desc": "Position of the circuit breaker inthe frame"
+	},
+	{
+		"index": 18428,
+		"segment": "register",
+		"register": 13158,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "FORMAT(328)",
+		"desc": "Status of the circuit breaker (e.g. open/closed/charged)"
+	},
+	{
+		"index": 18429,
+		"segment": "register",
+		"register": 13159,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Unsigned int",
+		"desc": "Overload parameter IR parameterset A (PS A)"
+	},
+	{
+		"index": 18430,
+		"segment": "register",
+		"register": 13160,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Unsigned int",
+		"desc": "Overload parameter IR parameter set B (PS B)"
+	},
+	{
+		"index": 18431,
+		"segment": "register",
+		"register": 13160,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"scaling": "0",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "UNSIGNEDINT",
+		"desc": "Overload/long-time pickup IR PS B"
+	},
+	{
+		"index": 18432,
+		"segment": "register",
+		"register": 13161,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "Unsigned int",
+		"desc": "Rating plug value"
+	},
+	{
+		"index": 18433,
+		"segment": "register",
+		"register": 13162,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "FORMAT370",
+		"desc": "Active parameter set"
+	},
+	{
+		"index": 18434,
+		"segment": "register",
+		"register": 13162,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "",
+		"desc": "RESERVED"
+	},
+	{
+		"index": 18435,
+		"segment": "register",
+		"register": 13167,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Trip log of the last 5 trips with time stamp"
+	},
+	{
+		"index": 18436,
+		"segment": "register",
+		"register": 13167,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Event log of the last 10 events with time stamp"
+	},
+	{
+		"index": 18437,
+		"segment": "register",
+		"register": 13168,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte of the communication module: Controls the commands/functions (e.g. clear or reset min./max. values)"
+	},
+	{
+		"index": 18438,
+		"segment": "register",
+		"register": 13169,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte for byte 183: Shows the phase with maximum load"
+	},
+	{
+		"index": 18439,
+		"segment": "register",
+		"register": 13170,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Average power factor, 3-phase"
+	},
+	{
+		"index": 18440,
+		"segment": "register",
+		"register": 13170,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Current in phase with maximum load"
+	},
+	{
+		"index": 18441,
+		"segment": "register",
+		"register": 13171,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Current in neutral conductor"
+	},
+	{
+		"index": 18442,
+		"segment": "register",
+		"register": 13171,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Ground current"
+	},
+	{
+		"index": 18443,
+		"segment": "register",
+		"register": 13172,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: System time of the circuit breaker"
+	},
+	{
+		"index": 18444,
+		"segment": "register",
+		"register": 13173,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Position of the circuit breaker in the frame"
+	},
+	{
+		"index": 18445,
+		"segment": "register",
+		"register": 13173,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Status of the circuit breaker (e.g. open/closed/charged)"
+	},
+	{
+		"index": 18446,
+		"segment": "register",
+		"register": 13174,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Overload/long-time pickup IR PS A"
+	},
+	{
+		"index": 18447,
+		"segment": "register",
+		"register": 13174,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Overload/long-time pickup IR PS B"
+	},
+	{
+		"index": 18448,
+		"segment": "register",
+		"register": 13175,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Rating plug value"
+	},
+	{
+		"index": 18449,
+		"segment": "register",
+		"register": 13175,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.2 Data set DS 51: Main overview",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Active parameter set"
+	},
+	{
+		"index": 18450,
+		"segment": "register",
+		"register": 13569,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 1"
+	},
+	{
+		"index": 18451,
+		"segment": "register",
+		"register": 13575,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 2"
+	},
+	{
+		"index": 18452,
+		"segment": "register",
+		"register": 13581,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 3"
+	},
+	{
+		"index": 18453,
+		"segment": "register",
+		"register": 13587,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 4"
+	},
+	{
+		"index": 18454,
+		"segment": "register",
+		"register": 13593,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 5"
+	},
+	{
+		"index": 18455,
+		"segment": "register",
+		"register": 13599,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 6"
+	},
+	{
+		"index": 18456,
+		"segment": "register",
+		"register": 13605,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 7"
+	},
+	{
+		"index": 18457,
+		"segment": "register",
+		"register": 13611,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 8"
+	},
+	{
+		"index": 18458,
+		"segment": "register",
+		"register": 13617,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 9"
+	},
+	{
+		"index": 18459,
+		"segment": "register",
+		"register": 13623,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 10"
+	},
+	{
+		"index": 18460,
+		"segment": "register",
+		"register": 13629,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 11"
+	},
+	{
+		"index": 18461,
+		"segment": "register",
+		"register": 13635,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 13"
+	},
+	{
+		"index": 18462,
+		"segment": "register",
+		"register": 13641,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 13"
+	},
+	{
+		"index": 18463,
+		"segment": "register",
+		"register": 13647,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 14"
+	},
+	{
+		"index": 18464,
+		"segment": "register",
+		"register": 13653,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 15"
+	},
+	{
+		"index": 18465,
+		"segment": "register",
+		"register": 13659,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 16"
+	},
+	{
+		"index": 18466,
+		"segment": "register",
+		"register": 13665,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 17"
+	},
+	{
+		"index": 18467,
+		"segment": "register",
+		"register": 13671,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 18"
+	},
+	{
+		"index": 18468,
+		"segment": "register",
+		"register": 13677,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 19"
+	},
+	{
+		"index": 18469,
+		"segment": "register",
+		"register": 13683,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 trips with time stamp 20"
+	},
+	{
+		"index": 18470,
+		"segment": "register",
+		"register": 13689,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.3 Data set DS 53: Trip log",
+		"datatype": "PROPERTYBYTE",
+		"desc": "last 20 trips with time stamp PB"
+	},
+	{
+		"index": 18471,
+		"segment": "register",
+		"register": 13825,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 1"
+	},
+	{
+		"index": 18472,
+		"segment": "register",
+		"register": 13831,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 2"
+	},
+	{
+		"index": 18473,
+		"segment": "register",
+		"register": 13837,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 3"
+	},
+	{
+		"index": 18474,
+		"segment": "register",
+		"register": 13843,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 4"
+	},
+	{
+		"index": 18475,
+		"segment": "register",
+		"register": 13849,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 5"
+	},
+	{
+		"index": 18476,
+		"segment": "register",
+		"register": 13855,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 6"
+	},
+	{
+		"index": 18477,
+		"segment": "register",
+		"register": 13861,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 7"
+	},
+	{
+		"index": 18478,
+		"segment": "register",
+		"register": 13867,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 8"
+	},
+	{
+		"index": 18479,
+		"segment": "register",
+		"register": 13873,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 9"
+	},
+	{
+		"index": 18480,
+		"segment": "register",
+		"register": 13879,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 10"
+	},
+	{
+		"index": 18481,
+		"segment": "register",
+		"register": 13885,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 11"
+	},
+	{
+		"index": 18482,
+		"segment": "register",
+		"register": 13891,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 12"
+	},
+	{
+		"index": 18483,
+		"segment": "register",
+		"register": 13897,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 13"
+	},
+	{
+		"index": 18484,
+		"segment": "register",
+		"register": 13903,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 14"
+	},
+	{
+		"index": 18485,
+		"segment": "register",
+		"register": 13909,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 15"
+	},
+	{
+		"index": 18486,
+		"segment": "register",
+		"register": 13915,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 16"
+	},
+	{
+		"index": 18487,
+		"segment": "register",
+		"register": 13921,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 17"
+	},
+	{
+		"index": 18488,
+		"segment": "register",
+		"register": 13927,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 18"
+	},
+	{
+		"index": 18489,
+		"segment": "register",
+		"register": 13933,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 19"
+	},
+	{
+		"index": 18490,
+		"segment": "register",
+		"register": 13939,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "FORMAT(15)",
+		"desc": "last 20 events with time 20"
+	},
+	{
+		"index": 18491,
+		"segment": "register",
+		"register": 13945,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.4 Data set DS 54: Event log",
+		"datatype": "PROPERTYBYTE",
+		"desc": "last 20 trips with time stamp PB"
+	},
+	{
+		"index": 18492,
+		"segment": "register",
+		"register": 16385,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 1"
+	},
+	{
+		"index": 18493,
+		"segment": "register",
+		"register": 16387,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 2"
+	},
+	{
+		"index": 18494,
+		"segment": "register",
+		"register": 16389,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 3"
+	},
+	{
+		"index": 18495,
+		"segment": "register",
+		"register": 16391,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 4"
+	},
+	{
+		"index": 18496,
+		"segment": "register",
+		"register": 16393,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 5"
+	},
+	{
+		"index": 18497,
+		"segment": "register",
+		"register": 16395,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 6"
+	},
+	{
+		"index": 18498,
+		"segment": "register",
+		"register": 16397,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 7"
+	},
+	{
+		"index": 18499,
+		"segment": "register",
+		"register": 16399,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 8"
+	},
+	{
+		"index": 18500,
+		"segment": "register",
+		"register": 16401,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 9"
+	},
+	{
+		"index": 18501,
+		"segment": "register",
+		"register": 16403,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 10"
+	},
+	{
+		"index": 18502,
+		"segment": "register",
+		"register": 16405,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 11"
+	},
+	{
+		"index": 18503,
+		"segment": "register",
+		"register": 16407,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 12"
+	},
+	{
+		"index": 18504,
+		"segment": "register",
+		"register": 16409,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 13"
+	},
+	{
+		"index": 18505,
+		"segment": "register",
+		"register": 16411,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 14"
+	},
+	{
+		"index": 18506,
+		"segment": "register",
+		"register": 16413,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 15"
+	},
+	{
+		"index": 18507,
+		"segment": "register",
+		"register": 16415,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 16"
+	},
+	{
+		"index": 18508,
+		"segment": "register",
+		"register": 16417,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 17"
+	},
+	{
+		"index": 18509,
+		"segment": "register",
+		"register": 16419,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 18"
+	},
+	{
+		"index": 18510,
+		"segment": "register",
+		"register": 16421,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 19"
+	},
+	{
+		"index": 18511,
+		"segment": "register",
+		"register": 16423,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 20"
+	},
+	{
+		"index": 18512,
+		"segment": "register",
+		"register": 16425,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 21"
+	},
+	{
+		"index": 18513,
+		"segment": "register",
+		"register": 16427,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 22"
+	},
+	{
+		"index": 18514,
+		"segment": "register",
+		"register": 16429,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 23"
+	},
+	{
+		"index": 18515,
+		"segment": "register",
+		"register": 16431,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 24"
+	},
+	{
+		"index": 18516,
+		"segment": "register",
+		"register": 16433,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 25"
+	},
+	{
+		"index": 18517,
+		"segment": "register",
+		"register": 16435,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 26"
+	},
+	{
+		"index": 18518,
+		"segment": "register",
+		"register": 16437,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 27"
+	},
+	{
+		"index": 18519,
+		"segment": "register",
+		"register": 16439,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 28"
+	},
+	{
+		"index": 18520,
+		"segment": "register",
+		"register": 16441,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "Format (309)",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 29"
+	},
+	{
+		"index": 18521,
+		"segment": "register",
+		"register": 16450,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.5 Data set DS 64: Data of the harmonics analysis",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Harmonics of current/voltage to the 29th harmonic 29 PB"
+	},
+	{
+		"index": 18522,
+		"segment": "register",
+		"register": 23297,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "UINT",
+		"desc": "Number of open/close operations under load"
+	},
+	{
+		"index": 18523,
+		"segment": "register",
+		"register": 23298,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "UINT",
+		"desc": ""
+	},
+	{
+		"index": 18524,
+		"segment": "register",
+		"register": 23299,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "UINT",
+		"desc": ""
+	},
+	{
+		"index": 18525,
+		"segment": "register",
+		"register": 23300,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "ULONG",
+		"desc": ""
+	},
+	{
+		"index": 18526,
+		"segment": "register",
+		"register": 23302,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "TIME",
+		"desc": ""
+	},
+	{
+		"index": 18527,
+		"segment": "register",
+		"register": 23306,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "UINT",
+		"desc": ""
+	},
+	{
+		"index": 18528,
+		"segment": "register",
+		"register": 23307,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "UINT",
+		"desc": ""
+	},
+	{
+		"index": 18529,
+		"segment": "register",
+		"register": 23308,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "UINT",
+		"desc": ""
+	},
+	{
+		"index": 18530,
+		"segment": "register",
+		"register": 23309,
+		"count": 8,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "Format(107)",
+		"desc": ""
+	},
+	{
+		"index": 18531,
+		"segment": "register",
+		"register": 23317,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "Format(405)",
+		"desc": ""
+	},
+	{
+		"index": 18532,
+		"segment": "register",
+		"register": 23321,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "Format(88)",
+		"desc": ""
+	},
+	{
+		"index": 18533,
+		"segment": "register",
+		"register": 23323,
+		"count": 9,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18534,
+		"segment": "register",
+		"register": 23332,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "PROPERTYBYTE",
+		"desc": ""
+	},
+	{
+		"index": 18535,
+		"segment": "register",
+		"register": 17416,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18536,
+		"segment": "register",
+		"register": 17416,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "DO1Status of outputs of the digital output module 1"
+	},
+	{
+		"index": 18537,
+		"segment": "register",
+		"register": 17416,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "DO2Status of outputs of the digital output module 2"
+	},
+	{
+		"index": 18538,
+		"segment": "register",
+		"register": 17429,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18539,
+		"segment": "register",
+		"register": 17429,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Property byte: System time of the circuit breaker"
+	},
+	{
+		"index": 18540,
+		"segment": "register",
+		"register": 17429,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18541,
+		"segment": "register",
+		"register": 17430,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18542,
+		"segment": "register",
+		"register": 17430,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18543,
+		"segment": "register",
+		"register": 17430,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Property byte: Status of outputs of the digital output module 1"
+	},
+	{
+		"index": 18544,
+		"segment": "register",
+		"register": 17431,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18545,
+		"segment": "register",
+		"register": 17431,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Property byte: Status of outputs of the digital output module 2"
+	},
+	{
+		"index": 18546,
+		"segment": "register",
+		"register": 17431,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.6 Data set DS 68: CubicleBUS Output Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18547,
+		"segment": "register",
+		"register": 17665,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18548,
+		"segment": "register",
+		"register": 17665,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Status of the inputs of digital input module 1"
+	},
+	{
+		"index": 18549,
+		"segment": "register",
+		"register": 17665,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Status of the inputs of digital input module 2"
+	},
+	{
+		"index": 18550,
+		"segment": "register",
+		"register": 17666,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18551,
+		"segment": "register",
+		"register": 17666,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18552,
+		"segment": "register",
+		"register": 17666,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "FORMAT(111)",
+		"desc": "Rotary switch position of the digital input module 1"
+	},
+	{
+		"index": 18553,
+		"segment": "register",
+		"register": 17667,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18554,
+		"segment": "register",
+		"register": 17667,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "FORMAT(111)",
+		"desc": "Rotary switch position of the digital input module 2"
+	},
+	{
+		"index": 18555,
+		"segment": "register",
+		"register": 17667,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "FORMAT(119)",
+		"desc": "Rotary switch position of the digital output module 1"
+	},
+	{
+		"index": 18556,
+		"segment": "register",
+		"register": 17668,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18557,
+		"segment": "register",
+		"register": 17668,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "FORMAT(119)",
+		"desc": "Rotary switch position of the digital output module 2"
+	},
+	{
+		"index": 18558,
+		"segment": "register",
+		"register": 17668,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18559,
+		"segment": "register",
+		"register": 17670,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18560,
+		"segment": "register",
+		"register": 17670,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18561,
+		"segment": "register",
+		"register": 17670,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "FORMAT(14)",
+		"desc": "Communication module write protection (Write Enable)"
+	},
+	{
+		"index": 18562,
+		"segment": "register",
+		"register": 17671,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18563,
+		"segment": "register",
+		"register": 17671,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"segment": "format",
+		"group": "4.5.7DatasetDS69:CubicleBUSInputModuleStatus",
+		"padding": []
+	},
+	{
+		"index": 18564,
+		"segment": "register",
+		"register": 17679,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18565,
+		"segment": "register",
+		"register": 17679,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": ""
+	},
+	{
+		"index": 18566,
+		"segment": "register",
+		"register": 17679,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: 6 Modbus communication module bits for the configurable digital output module"
+	},
+	{
+		"index": 18567,
+		"segment": "register",
+		"register": 17680,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18568,
+		"segment": "register",
+		"register": 17680,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Status of the inputs of digital input module 1"
+	},
+	{
+		"index": 18569,
+		"segment": "register",
+		"register": 17680,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Status of the inputs of digital input module 2"
+	},
+	{
+		"index": 18570,
+		"segment": "register",
+		"register": 17681,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18571,
+		"segment": "register",
+		"register": 17681,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18572,
+		"segment": "register",
+		"register": 17681,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Circuit breaker position at the digital input module 1"
+	},
+	{
+		"index": 18573,
+		"segment": "register",
+		"register": 17682,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "",
+		"desc": ""
+	},
+	{
+		"index": 18574,
+		"segment": "register",
+		"register": 17682,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Circuit breaker position at the digital input module 2"
+	},
+	{
+		"index": 18575,
+		"segment": "register",
+		"register": 17682,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 0,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.7 Data set DS 69: CubicleBUS Input Module Status",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Circuit breaker position at the digital output module 1"
+	},
+	{
+		"index": 18576,
+		"segment": "register",
+		"register": 18433,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Minimum current in phase 1"
+	},
+	{
+		"index": 18577,
+		"segment": "register",
+		"register": 18434,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum current in phase 1"
+	},
+	{
+		"index": 18578,
+		"segment": "register",
+		"register": 18435,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Minimum current in phase 2"
+	},
+	{
+		"index": 18579,
+		"segment": "register",
+		"register": 18436,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum current in phase 2"
+	},
+	{
+		"index": 18580,
+		"segment": "register",
+		"register": 18437,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Minimum current in phase 3"
+	},
+	{
+		"index": 18581,
+		"segment": "register",
+		"register": 18438,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum current in phase 3"
+	},
+	{
+		"index": 18582,
+		"segment": "register",
+		"register": 18439,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum current in neutral conductor"
+	},
+	{
+		"index": 18583,
+		"segment": "register",
+		"register": 18440,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum current in neutral conductor"
+	},
+	{
+		"index": 18584,
+		"segment": "register",
+		"register": 18441,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Minimum ground current"
+	},
+	{
+		"index": 18585,
+		"segment": "register",
+		"register": 18442,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum ground current"
+	},
+	{
+		"index": 18586,
+		"segment": "register",
+		"register": 18443,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Minimum average 3- phase current"
+	},
+	{
+		"index": 18587,
+		"segment": "register",
+		"register": 18444,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum average 3- phase current"
+	},
+	{
+		"index": 18588,
+		"segment": "register",
+		"register": 18445,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Minimum current demand"
+	},
+	{
+		"index": 18589,
+		"segment": "register",
+		"register": 18446,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum current demand"
+	},
+	{
+		"index": 18590,
+		"segment": "register",
+		"register": 18447,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "-1",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Minimum crest factor"
+	},
+	{
+		"index": 18591,
+		"segment": "register",
+		"register": 18447,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Maximum crest factor"
+	},
+	{
+		"index": 18592,
+		"segment": "register",
+		"register": 18448,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "-1",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Minimum form factor"
+	},
+	{
+		"index": 18593,
+		"segment": "register",
+		"register": 18448,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Maximum form factor"
+	},
+	{
+		"index": 18594,
+		"segment": "register",
+		"register": 18449,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS minimum current in phase L1"
+	},
+	{
+		"index": 18595,
+		"segment": "register",
+		"register": 18453,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum current in phase L1"
+	},
+	{
+		"index": 18596,
+		"segment": "register",
+		"register": 18457,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS minimum current in phase L2"
+	},
+	{
+		"index": 18597,
+		"segment": "register",
+		"register": 18461,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum current in phase L2"
+	},
+	{
+		"index": 18598,
+		"segment": "register",
+		"register": 18465,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS minimum current in phase L3"
+	},
+	{
+		"index": 18599,
+		"segment": "register",
+		"register": 18469,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum current in phase L3"
+	},
+	{
+		"index": 18600,
+		"segment": "register",
+		"register": 18473,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum average value over 3 phases"
+	},
+	{
+		"index": 18601,
+		"segment": "register",
+		"register": 18477,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum average value over 3 phases"
+	},
+	{
+		"index": 18602,
+		"segment": "register",
+		"register": 18481,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS minimum average current demand"
+	},
+	{
+		"index": 18603,
+		"segment": "register",
+		"register": 18485,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum average current demand"
+	},
+	{
+		"index": 18604,
+		"segment": "register",
+		"register": 18489,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS minimum current in neutral conductor"
+	},
+	{
+		"index": 18605,
+		"segment": "register",
+		"register": 18493,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum current in neutral conductor"
+	},
+	{
+		"index": 18606,
+		"segment": "register",
+		"register": 18497,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS minimum ground current"
+	},
+	{
+		"index": 18607,
+		"segment": "register",
+		"register": 18501,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum ground current"
+	},
+	{
+		"index": 18608,
+		"segment": "register",
+		"register": 18505,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS minimum crest factor"
+	},
+	{
+		"index": 18609,
+		"segment": "register",
+		"register": 18509,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum crest factor"
+	},
+	{
+		"index": 18610,
+		"segment": "register",
+		"register": 18513,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS minimum form factor"
+	},
+	{
+		"index": 18611,
+		"segment": "register",
+		"register": 18517,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.8 Data set DS 72: Min./max. measured metered value log",
+		"datatype": "Time",
+		"desc": "TS maximum form factor"
+	},
+	{
+		"index": 18612,
+		"segment": "register",
+		"register": 18689,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.9 Data set DS 73: Min./max. measured values of the voltages",
+		"datatype": "Unsigned int16",
+		"desc": "Minimum phase-tophase voltage L1-L2"
+	},
+	{
+		"index": 18613,
+		"segment": "register",
+		"register": 18945,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.10 Data set DS 74: Min./max. measured values of the powers",
+		"datatype": "Signed int16",
+		"desc": "Minimum average power factor (3-phase)"
+	},
+	{
+		"index": 18614,
+		"segment": "register",
+		"register": 19457,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.11 Data set DS 76: Min./max. measured values of frequency and THD",
+		"datatype": "Unsigned int16",
+		"desc": "Maximum frequency"
+	},
+	{
+		"index": 18615,
+		"segment": "register",
+		"register": 19713,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.12 Data set DS 77: Min./max. measured values of the temperatures",
+		"datatype": "SIGNEDCHAR",
+		"desc": "Minimum temperature in the cubicle"
+	},
+	{
+		"index": 18616,
+		"segment": "register",
+		"register": 19713,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.12 Data set DS 77: Min./max. measured values of the temperatures",
+		"datatype": "SIGNEDCHAR",
+		"desc": "Maximum temperature in the cubicle"
+	},
+	{
+		"index": 18617,
+		"segment": "register",
+		"register": 19714,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.12 Data set DS 77: Min./max. measured values of the temperatures",
+		"datatype": "SIGNEDCHAR",
+		"desc": "Minimum temperature in the circuit breaker"
+	},
+	{
+		"index": 18618,
+		"segment": "register",
+		"register": 19714,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.12 Data set DS 77: Min./max. measured values of the temperatures",
+		"datatype": "SIGNEDCHAR",
+		"desc": "Maximum temperature in the circuit breaker"
+	},
+	{
+		"index": 18619,
+		"segment": "register",
+		"register": 19738,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.12 Data set DS 77: Min./max. measured values of the temperatures",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Minimum temperature in the cubicle"
+	},
+	{
+		"index": 18620,
+		"segment": "register",
+		"register": 19738,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.12 Data set DS 77: Min./max. measured values of the temperatures",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Maximum temperature in the cubicle"
+	},
+	{
+		"index": 18621,
+		"segment": "register",
+		"register": 23297,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "Unsigned int16",
+		"desc": "Number of open/close operations under load"
+	},
+	{
+		"index": 18622,
+		"segment": "register",
+		"register": 23298,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "Unsigned int16",
+		"desc": "Number of open/close operations caused by trips"
+	},
+	{
+		"index": 18623,
+		"segment": "register",
+		"register": 23300,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.13 Data set DS 91: Statistical information",
+		"datatype": "Unsigned long32",
+		"desc": "Runtime meter (when closed + current > 0)"
+	},
+	{
+		"index": 18624,
+		"segment": "register",
+		"register": 23555,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.14 Data set DS 92: Diagnostic data",
+		"datatype": "hex string",
+		"desc": "SENTRON identification number (0x0E05)"
+	},
+	{
+		"index": 18625,
+		"segment": "register",
+		"register": 23556,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.14 Data set DS 92: Diagnostic data",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Fixed value 0x42"
+	},
+	{
+		"index": 18626,
+		"segment": "register",
+		"register": 23556,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.14 Data set DS 92: Diagnostic data",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "External diagnostic bit  1 = Diagnosis ? 0 = No diagnosis"
+	},
+	{
+		"index": 18627,
+		"segment": "register",
+		"register": 23557,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.14 Data set DS 92: Diagnostic data",
+		"datatype": "hex string",
+		"desc": "Fixed header; value 0x05 82 00 00 00"
+	},
+	{
+		"index": 18628,
+		"segment": "register",
+		"register": 23559,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.14 Data set DS 92: Diagnostic data",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18629,
+		"segment": "register",
+		"register": 23563,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.14 Data set DS 92: Diagnostic data",
+		"datatype": "Format (88)",
+		"desc": "Modules connected to the CubicleBUS"
+	},
+	{
+		"index": 18630,
+		"segment": "register",
+		"register": 23567,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.14 Data set DS 92: Diagnostic data",
+		"datatype": "Format (307)",
+		"desc": "Count of trips by extended protective functions"
+	},
+	{
+		"index": 18631,
+		"segment": "register",
+		"register": 23811,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.15 Data set DS 93: Controlling the circuit breakers",
+		"datatype": "Format (406)",
+		"desc": "Controls the trip unit"
+	},
+	{
+		"index": 18632,
+		"segment": "register",
+		"register": 23813,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 5,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.15 Data set DS 93: Controlling the circuit breakers",
+		"datatype": "FORMAT(121)",
+		"desc": "Controls digital output module 1"
+	},
+	{
+		"index": 18633,
+		"segment": "register",
+		"register": 23813,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 5,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.15 Data set DS 93: Controlling the circuit breakers",
+		"datatype": "FORMAT(126)",
+		"desc": "Controls digital output module 2"
+	},
+	{
+		"segment": "format",
+		"group": "4.5.16DatasetDS94:Currentmeasuredvalues",
+		"padding": []
+	},
+	{
+		"index": 18634,
+		"segment": "register",
+		"register": 24065,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.16 Data set DS 94: Current measured values",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Reserved"
+	},
+	{
+		"index": 18635,
+		"segment": "register",
+		"register": 24066,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.16 Data set DS 94: Current measured values",
+		"datatype": "Unsigned int16",
+		"desc": "3-phase current demand"
+	},
+	{
+		"index": 18636,
+		"segment": "register",
+		"register": 24080,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.16 Data set DS 94: Current measured values",
+		"datatype": "Unsigned int16",
+		"desc": "Line-to-neutral voltage L1"
+	},
+	{
+		"index": 18637,
+		"segment": "register",
+		"register": 24129,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.16 Data set DS 94: Current measured values",
+		"datatype": "Unsigned long32",
+		"desc": "Reactive energy in reverse direction [kVARh]"
+	},
+	{
+		"index": 18638,
+		"segment": "register",
+		"register": 24833,
+		"count": 9,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.17 Data set DS 97: Detailed identification",
+		"datatype": "hex string",
+		"desc": "Part number of the trip unit"
+	},
+	{
+		"index": 18639,
+		"segment": "register",
+		"register": 25603,
+		"count": 4,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.18 Data set DS 100: Identification overview",
+		"datatype": "Time",
+		"desc": "Test date of the circuit breaker"
+	},
+	{
+		"index": 18640,
+		"segment": "register",
+		"register": 25607,
+		"count": 10,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.18 Data set DS 100: Identification overview",
+		"datatype": "string",
+		"desc": "Manufacturer (SIEMENS)"
+	},
+	{
+		"index": 18641,
+		"segment": "register",
+		"register": 25617,
+		"count": 12,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.18 Data set DS 100: Identification overview",
+		"datatype": "string",
+		"desc": "Device name (SENTRON WL)"
+	},
+	{
+		"index": 18642,
+		"segment": "register",
+		"register": 32771,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "FORMAT(162)",
+		"desc": "Voltage transformer primary connection: star/wye or delta"
+	},
+	{
+		"index": 18643,
+		"segment": "register",
+		"register": 32772,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "Unsigned int16",
+		"desc": "Voltage transformer primary rating"
+	},
+	{
+		"index": 18644,
+		"segment": "register",
+		"register": 32773,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Voltage transformer secondary rating"
+	},
+	{
+		"index": 18645,
+		"segment": "register",
+		"register": 32773,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Length of period for calculating demand"
+	},
+	{
+		"index": 18646,
+		"segment": "register",
+		"register": 32775,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "Unsigned int16",
+		"desc": "Underflow limit1)"
+	},
+	{
+		"index": 18647,
+		"segment": "register",
+		"register": 32771,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 5,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "FORMAT(162)",
+		"desc": "Voltage transformer primary connection: star/wye or delta"
+	},
+	{
+		"index": 18648,
+		"segment": "register",
+		"register": 32772,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "Unsigned int16",
+		"desc": "Voltage transformer primary rating"
+	},
+	{
+		"index": 18649,
+		"segment": "register",
+		"register": 32773,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 5,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Voltage transformer secondary rating"
+	},
+	{
+		"index": 18650,
+		"segment": "register",
+		"register": 32773,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 5,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "UNSIGNEDCHAR",
+		"desc": "Length of period for calculating demand"
+	},
+	{
+		"index": 18651,
+		"segment": "register",
+		"register": 32775,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.19 Data set DS 128: Parameters of the metering function and enhanced protection function",
+		"datatype": "Unsigned int16",
+		"desc": "Underflow limit1)"
+	},
+	{
+		"index": 18652,
+		"segment": "register",
+		"register": 33027,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.20 Data set DS 129: Parameters of the protection function and settings for load shed threshold and load pickup",
+		"datatype": "Unsigned int16",
+		"desc": "Overload/long-time pickup IR PS A"
+	},
+	{
+		"index": 18653,
+		"segment": "register",
+		"register": 33028,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.20 Data set DS 129: Parameters of the protection function and settings for load shed threshold and load pickup",
+		"datatype": "Unsigned int16",
+		"desc": "Neutral overload pickup IN PS A"
+	},
+	{
+		"index": 18654,
+		"segment": "register",
+		"register": 33029,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.20 Data set DS 129: Parameters of the protection function and settings for load shed threshold and load pickup",
+		"datatype": "Unsigned int16",
+		"desc": "Overload/long-time delay tR PS A"
+	},
+	{
+		"index": 18655,
+		"segment": "register",
+		"register": 33027,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.20 Data set DS 129: Parameters of the protection function and settings for load shed threshold and load pickup",
+		"datatype": "Unsigned int16",
+		"desc": "Overload/long-time pickup IR PS A"
+	},
+	{
+		"index": 18656,
+		"segment": "register",
+		"register": 33028,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.20 Data set DS 129: Parameters of the protection function and settings for load shed threshold and load pickup",
+		"datatype": "Unsigned int16",
+		"desc": "Neutral overload pickup IN PS A"
+	},
+	{
+		"index": 18657,
+		"segment": "register",
+		"register": 33029,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.20 Data set DS 129: Parameters of the protection function and settings for load shed threshold and load pickup",
+		"datatype": "Unsigned int16",
+		"desc": "Overload/long-time delay tR PS A"
+	},
+	{
+		"index": 18658,
+		"segment": "register",
+		"register": 33283,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.21 Data set DS 130: Parameters for the alarm setpoint values",
+		"datatype": "Unsigned int16",
+		"desc": "Active power in normal direction"
+	},
+	{
+		"index": 18659,
+		"segment": "register",
+		"register": 33284,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.21 Data set DS 130: Parameters for the alarm setpoint values",
+		"datatype": "Unsigned int16",
+		"desc": "Active power in reverse direction"
+	},
+	{
+		"index": 18660,
+		"segment": "register",
+		"register": 33285,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.21 Data set DS 130: Parameters for the alarm setpoint values",
+		"datatype": "Unsigned int16",
+		"desc": "Power factor, capacitive"
+	},
+	{
+		"index": 18661,
+		"segment": "register",
+		"register": 33283,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.21 Data set DS 130: Parameters for the alarm setpoint values",
+		"datatype": "Unsigned int16",
+		"desc": "Active power in normal direction"
+	},
+	{
+		"index": 18662,
+		"segment": "register",
+		"register": 33284,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.21 Data set DS 130: Parameters for the alarm setpoint values",
+		"datatype": "Unsigned int16",
+		"desc": "Active power in reverse direction"
+	},
+	{
+		"index": 18663,
+		"segment": "register",
+		"register": 33285,
+		"count": 1,
+		"fc": 5,
+		"unit": "",
+		"catalog": "4.5.21 Data set DS 130: Parameters for the alarm setpoint values",
+		"datatype": "Unsigned int16",
+		"desc": "Power factor, capacitive"
+	},
+	{
+		"index": 18664,
+		"segment": "register",
+		"register": 33539,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.22 Data set DS 131: Parameters to activate/deactivate extended protective functions and alarm setpoint functions",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Overload/long-time pickup IR PS A"
+	},
+	{
+		"index": 18665,
+		"segment": "register",
+		"register": 33539,
+		"count": 1,
+		"bitoffset": 8,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.22 Data set DS 131: Parameters to activate/deactivate extended protective functions and alarm setpoint functions",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Neutral overload pickup IN PS A"
+	},
+	{
+		"index": 18666,
+		"segment": "register",
+		"register": 33540,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.22 Data set DS 131: Parameters to activate/deactivate extended protective functions and alarm setpoint functions",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Instantaneous short-circuit pickup Ii PS A"
+	},
+	{
+		"index": 18667,
+		"segment": "register",
+		"register": 40964,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.23 Data set DS 160: Parameters for communication",
+		"datatype": "HEXSTRING",
+		"desc": "Basic type of Modbus TCP data transfer"
+	},
+	{
+		"index": 18668,
+		"segment": "register",
+		"register": 40965,
+		"count": 14,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.23 Data set DS 160: Parameters for communication",
+		"datatype": "Format (7)",
+		"desc": "Data in the cyclic profile of Modbus TCP"
+	},
+	{
+		"index": 18669,
+		"segment": "register",
+		"register": 40997,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.23 Data set DS 160: Parameters for communication",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: Basic type of Modbus TCP data transfer"
+	},
+	{
+		"index": 18670,
+		"segment": "register",
+		"register": 41220,
+		"count": 6,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.24 Data set DS 161: Parameters for communication",
+		"datatype": "Format (476)",
+		"desc": "Structure for IPv4 device address, network mask and gateway of the COM35"
+	},
+	{
+		"index": 18671,
+		"segment": "register",
+		"register": 41226,
+		"count": 2,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.24 Data set DS 161: Parameters for communication",
+		"datatype": "Unsigned long32",
+		"desc": "SNTP server IPv4 device address"
+	},
+	{
+		"index": 18672,
+		"segment": "register",
+		"register": 41475,
+		"count": 8,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.25 Data set DS 162: Device configuration",
+		"datatype": "STRING",
+		"desc": "ID number of the COM35"
+	},
+	{
+		"index": 18673,
+		"segment": "register",
+		"register": 41483,
+		"count": 10,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.25 Data set DS 162: Device configuration",
+		"datatype": "Format (103)",
+		"desc": "Part number of circuit breaker"
+	},
+	{
+		"index": 18674,
+		"segment": "register",
+		"register": 41493,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.25 Data set DS 162: Device configuration",
+		"datatype": "FORMAT(138)",
+		"desc": "Type (metering function, metering function PLUS)"
+	},
+	{
+		"index": 18675,
+		"segment": "register",
+		"register": 41731,
+		"count": 120,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.26 Data set DS 163: Profinet device name",
+		"datatype": "STRING",
+		"desc": "PROFINET device name"
+	},
+	{
+		"index": 18676,
+		"segment": "register",
+		"register": 41751,
+		"count": 1,
+		"bitoffset": 0,
+		"bitcount": 8,
+		"fc": 3,
+		"unit": "",
+		"scaling": "",
+		"catalog": "4.5.26 Data set DS 163: Profinet device name",
+		"datatype": "PROPERTYBYTE",
+		"desc": "Property byte: PROFINET device name"
+	},
+	{
+		"index": 18677,
+		"segment": "register",
+		"register": 42243,
+		"count": 32,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.27 Data set DS 165: Identification comment",
+		"datatype": "STRING",
+		"desc": "User text (freely editable)"
+	},
+	{
+		"index": 18678,
+		"segment": "register",
+		"register": 42275,
+		"count": 32,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.27 Data set DS 165: Identification comment",
+		"datatype": "STRING",
+		"desc": "Plant identifier (freely editable)"
+	},
+	{
+		"index": 18679,
+		"segment": "register",
+		"register": 42499,
+		"count": 100,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.28 Data set DS 166: IP white list",
+		"datatype": "Format (508)",
+		"desc": "White list IP addresses"
+	},
+	{
+		"index": 18680,
+		"segment": "register",
+		"register": 42755,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.29 Data set DS 167: Daylight saving change",
+		"datatype": "signed int 16",
+		"desc": "Offset from UTC"
+	},
+	{
+		"index": 18681,
+		"segment": "register",
+		"register": 42756,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.29 Data set DS 167: Daylight saving change",
+		"datatype": "unsigned int 16",
+		"desc": "Switch daylight saving change on/off"
+	},
+	{
+		"index": 18682,
+		"segment": "register",
+		"register": 42757,
+		"count": 1,
+		"fc": 3,
+		"unit": "",
+		"catalog": "4.5.29 Data set DS 167: Daylight saving change",
+		"datatype": "unsigned int 16",
+		"desc": "If daylight saving is active"
+	},
+	{
+		"segment": "format",
+		"group": "Format307",
+		"padding": [
+			{
+				"index": 18683,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"unit": "",
+				"scaling": "",
+				"desc": "Trips by the extended protective functions (metering)",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18684,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 0,
+				"enumval": "0 / 1 0x0000 No trip"
+			},
+			{
+				"index": 18685,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 1,
+				"enumval": "0 / 1 0x0001 Phase unbalance current"
+			},
+			{
+				"index": 18686,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 2,
+				"enumval": "0 / 1 0x0002 Phase unbalance voltage"
+			},
+			{
+				"index": 18687,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 4,
+				"enumval": "0 / 1 0x0004 Active power in normal direction"
+			},
+			{
+				"index": 18688,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 8,
+				"enumval": "0 / 1 0x0008 Active power in reverse direction"
+			},
+			{
+				"index": 18689,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 64,
+				"enumval": "0 / 1 0x0040 Overvoltage"
+			},
+			{
+				"index": 18690,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 128,
+				"enumval": "0 / 1 0x0080 Undervoltage"
+			},
+			{
+				"index": 18691,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 256,
+				"enumval": "0 / 1 0x0100 Overfrequency"
+			},
+			{
+				"index": 18692,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 512,
+				"enumval": "0 / 1 0x0200 Underfrequency"
+			},
+			{
+				"index": 18693,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 1024,
+				"enumval": "0 / 1 0x0400 THD current"
+			},
+			{
+				"index": 18694,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 2048,
+				"enumval": "0 / 1 0x0800 THD voltage"
+			},
+			{
+				"index": 18695,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 4096,
+				"enumval": "0 / 1 0x1000 Change in direction of phase rotation"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format95",
+		"padding": [
+			{
+				"index": 18696,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Market",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18697,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 1 IEC 60947-2",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18698,
+				"catalog": "bits",
+				"bitoffset": 1,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 2 UL489",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18699,
+				"catalog": "bits",
+				"bitoffset": 2,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 3 ANSI (UL1066)",
+				"datatype": "BITS"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format88",
+		"padding": [
+			{
+				"index": 18700,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "CubicleBUS modules 0 0 COM15 _ COM16 _ COM35",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18701,
+				"catalog": "bits",
+				"bitoffset": 1,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 1 Trip unit ETU",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18702,
+				"catalog": "bits",
+				"bitoffset": 2,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 2 ZSI module",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18703,
+				"catalog": "bits",
+				"bitoffset": 8,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "1 0 Configurable digital output module",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18704,
+				"catalog": "bits",
+				"bitoffset": 10,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "1 2 Digital output module No. 2",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18705,
+				"catalog": "bits",
+				"bitoffset": 11,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "1 3 Digital input module No. 2",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18706,
+				"catalog": "bits",
+				"bitoffset": 12,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "1 4 Breaker Status Sensor BSS",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18707,
+				"catalog": "bits",
+				"bitoffset": 13,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "1 5 Digital output module No. 1",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18708,
+				"catalog": "bits",
+				"bitoffset": 14,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "1 6 Digital input module No. 1",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18709,
+				"catalog": "bits",
+				"bitoffset": 17,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "2 1 BDA PLUS",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18710,
+				"catalog": "bits",
+				"bitoffset": 19,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "2 3 Graphical display ETU76B_ETU776",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18711,
+				"catalog": "bits",
+				"bitoffset": 20,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "2 4 Analog output module No. 2",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18712,
+				"catalog": "bits",
+				"bitoffset": 21,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "2 5 Analog output module No. 1",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18713,
+				"catalog": "bits",
+				"bitoffset": 22,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "2 6 Metering function or metering function PLUS",
+				"datatype": "BITS"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format309",
+		"padding": [
+			{
+				"index": 18714,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Harmonic current, Exponent",
+				"datatype": "SIGNEDCHAR"
+			},
+			{
+				"index": 18715,
+				"catalog": "bits",
+				"bitoffset": 8,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Harmonic current, Value",
+				"datatype": "UNSIGNEDCHAR"
+			},
+			{
+				"index": 18716,
+				"catalog": "bits",
+				"bitoffset": 16,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Harmonic voltage, Exponent",
+				"datatype": "SIGNEDCHAR"
+			},
+			{
+				"index": 18717,
+				"catalog": "bits",
+				"bitoffset": 24,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Harmonic voltage, Value",
+				"datatype": "UNSIGNEDCHAR"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "FORMAT370",
+		"padding": [
+			{
+				"index": 18718,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18719,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "Parameter set A active"
+			},
+			{
+				"index": 18720,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "Parameter set B active"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "FORMAT373",
+		"padding": [
+			{
+				"index": 18721,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "_Phase number_ 0 0 Phase L1",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18722,
+				"catalog": "bits",
+				"bitoffset": 1,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "_Phase number_ 0 1 Phase L2",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18723,
+				"catalog": "bits",
+				"bitoffset": 2,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "_Phase number_ 0 2 Phase L3",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18724,
+				"catalog": "bits",
+				"bitoffset": 3,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "_Phase number_ 0 3 N-conductor",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18725,
+				"catalog": "bits",
+				"bitoffset": 4,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "_Phase number_ 0 4 Ground fault",
+				"datatype": "BITS"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "FORMAT19",
+		"padding": [
+			{
+				"index": 18726,
+				"catalog": "bits",
+				"bitoffset": 8,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 0 Set user output",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18727,
+				"catalog": "bits",
+				"bitoffset": 9,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 1 Reset user output",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18728,
+				"catalog": "bits",
+				"bitoffset": 10,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 2 Open circuit breaker",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18729,
+				"catalog": "bits",
+				"bitoffset": 11,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 3 Close the circuit breaker",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18730,
+				"catalog": "bits",
+				"bitoffset": 12,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 4 Switch user output mode to trip message",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18731,
+				"catalog": "bits",
+				"bitoffset": 13,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "Status of user output mode 1 = 0 Trip is output 0 5 =1 Actuation by user",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18732,
+				"catalog": "bits",
+				"bitoffset": 14,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 6 Read status of user output",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18733,
+				"catalog": "bits",
+				"bitoffset": 15,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 7 Read status of user input (COM16 only)",
+				"datatype": "BITS"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format16",
+		"padding": [
+			{
+				"index": 18734,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Year",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18735,
+				"catalog": "bits",
+				"bitoffset": 8,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Month",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18736,
+				"catalog": "bits",
+				"bitoffset": 16,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Day",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18737,
+				"catalog": "bits",
+				"bitoffset": 24,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Hour",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18738,
+				"catalog": "bits",
+				"bitoffset": 32,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Minute",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18739,
+				"catalog": "bits",
+				"bitoffset": 40,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Seconds",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18740,
+				"catalog": "bits",
+				"bitoffset": 48,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Low-order digits of milliseconds",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18741,
+				"catalog": "bits",
+				"bitoffset": 56,
+				"bitcount": 4,
+				"unit": "",
+				"scaling": "",
+				"desc": "Weekday (1 =Sunday, ..., 7 = Saturday) 0 - 3",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18742,
+				"catalog": "bits",
+				"bitoffset": 60,
+				"bitcount": 4,
+				"unit": "",
+				"scaling": "",
+				"desc": "Higher-order digits of milliseconds (4MSB) 4 - 7",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18743,
+				"catalog": "bits",
+				"bitoffset": 64,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "8 ！ Reserved 0x00",
+				"datatype": ""
+			},
+			{
+				"index": 18744,
+				"catalog": "bits",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Reason for tripping operation",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18745,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "1 2 Overload warning"
+			},
+			{
+				"index": 18746,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 2,
+				"enumval": "1 2 Overload warning"
+			},
+			{
+				"index": 18747,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 3,
+				"enumval": "3 4 Overload warning N-conductor"
+			},
+			{
+				"index": 18748,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 4,
+				"enumval": "3 4 Overload warning N-conductor"
+			},
+			{
+				"index": 18749,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 5,
+				"enumval": "5 6 Load shedding alarm"
+			},
+			{
+				"index": 18750,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 6,
+				"enumval": "5 6 Load shedding alarm"
+			},
+			{
+				"index": 18751,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 7,
+				"enumval": "7 8 Load pick up message"
+			},
+			{
+				"index": 18752,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 8,
+				"enumval": "7 8 Load pick up message"
+			},
+			{
+				"index": 18753,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 9,
+				"enumval": "9 10 Phase unbalance warning"
+			},
+			{
+				"index": 18754,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 10,
+				"enumval": "9 10 Phase unbalance warning"
+			},
+			{
+				"index": 18755,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 11,
+				"enumval": "11 12 Fault in trip unit"
+			},
+			{
+				"index": 18756,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 12,
+				"enumval": "11 12 Fault in trip unit"
+			},
+			{
+				"index": 18757,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 13,
+				"enumval": "13 14 Ground fault warning"
+			},
+			{
+				"index": 18758,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 14,
+				"enumval": "13 14 Ground fault warning"
+			},
+			{
+				"index": 18759,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 15,
+				"enumval": "15 16 Overtemperature warning"
+			},
+			{
+				"index": 18760,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 16,
+				"enumval": "15 16 Overtemperature warning"
+			},
+			{
+				"index": 18761,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 17,
+				"enumval": "-"
+			},
+			{
+				"index": 18762,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 18,
+				"enumval": "-"
+			},
+			{
+				"index": 18763,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 19,
+				"enumval": "-"
+			},
+			{
+				"index": 18764,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 20,
+				"enumval": "20 ！ Switch on"
+			},
+			{
+				"index": 18765,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 21,
+				"enumval": "21 ！ Switch off"
+			},
+			{
+				"index": 18766,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 22,
+				"enumval": "-"
+			},
+			{
+				"index": 18767,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 23,
+				"enumval": "+"
+			},
+			{
+				"index": 18768,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 24,
+				"enumval": "-"
+			},
+			{
+				"index": 18769,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 25,
+				"enumval": "+"
+			},
+			{
+				"index": 18770,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 26,
+				"enumval": "-"
+			},
+			{
+				"index": 18771,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 27,
+				"enumval": "+"
+			},
+			{
+				"index": 18772,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 28,
+				"enumval": "-"
+			},
+			{
+				"index": 18773,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 29,
+				"enumval": "+"
+			},
+			{
+				"index": 18774,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 30,
+				"enumval": "-"
+			},
+			{
+				"index": 18775,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 31,
+				"enumval": "+"
+			},
+			{
+				"index": 18776,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 32,
+				"enumval": "-"
+			},
+			{
+				"index": 18777,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 33,
+				"enumval": "+"
+			},
+			{
+				"index": 18778,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 34,
+				"enumval": "-"
+			},
+			{
+				"index": 18779,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 35,
+				"enumval": "+"
+			},
+			{
+				"index": 18780,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 36,
+				"enumval": "-"
+			},
+			{
+				"index": 18781,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 37,
+				"enumval": "+"
+			},
+			{
+				"index": 18782,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 38,
+				"enumval": "-"
+			},
+			{
+				"index": 18783,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 39,
+				"enumval": "+"
+			},
+			{
+				"index": 18784,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 40,
+				"enumval": "40 41 Threshold warning TV current"
+			},
+			{
+				"index": 18785,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 41,
+				"enumval": "40 41 Threshold warning TV current"
+			},
+			{
+				"index": 18786,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 42,
+				"enumval": "42 43 TV ground fault"
+			},
+			{
+				"index": 18787,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 43,
+				"enumval": "42 43 TV ground fault"
+			},
+			{
+				"index": 18788,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 44,
+				"enumval": "44 45 TV overcurrent N-conductor"
+			},
+			{
+				"index": 18789,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 45,
+				"enumval": "44 45 TV overcurrent N-conductor"
+			},
+			{
+				"index": 18790,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 46,
+				"enumval": "46 47 TV unbalance current"
+			},
+			{
+				"index": 18791,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 47,
+				"enumval": "46 47 TV unbalance current"
+			},
+			{
+				"index": 18792,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 48,
+				"enumval": "48 49 TV long-time mean value for current"
+			},
+			{
+				"index": 18793,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 49,
+				"enumval": "48 49 TV long-time mean value for current"
+			},
+			{
+				"index": 18794,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 50,
+				"enumval": "50 51 TV undervoltage"
+			},
+			{
+				"index": 18795,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 51,
+				"enumval": "50 51 TV undervoltage"
+			},
+			{
+				"index": 18796,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 52,
+				"enumval": "52 53 TV unbalance voltage"
+			},
+			{
+				"index": 18797,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 53,
+				"enumval": "52 53 TV unbalance voltage"
+			},
+			{
+				"index": 18798,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 54,
+				"enumval": "54 55 TV overvoltage"
+			},
+			{
+				"index": 18799,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 55,
+				"enumval": "54 55 TV overvoltage"
+			},
+			{
+				"index": 18800,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 56,
+				"enumval": "56 57 TV long-time mean value for active power"
+			},
+			{
+				"index": 18801,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 57,
+				"enumval": "56 57 TV long-time mean value for active power"
+			},
+			{
+				"index": 18802,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 58,
+				"enumval": "58 59 TV long-time mean value for apparent power"
+			},
+			{
+				"index": 18803,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 59,
+				"enumval": "58 59 TV long-time mean value for apparent power"
+			},
+			{
+				"index": 18804,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 60,
+				"enumval": "60 61 TV long-time mean value for reactive power"
+			},
+			{
+				"index": 18805,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 61,
+				"enumval": "60 61 TV long-time mean value for reactive power"
+			},
+			{
+				"index": 18806,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 62,
+				"enumval": "62 63 TV reactive power in normal direction"
+			},
+			{
+				"index": 18807,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 63,
+				"enumval": "62 63 TV reactive power in normal direction"
+			},
+			{
+				"index": 18808,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 64,
+				"enumval": "64 65 TV reactive power in reverse direction"
+			},
+			{
+				"index": 18809,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 65,
+				"enumval": "64 65 TV reactive power in reverse direction"
+			},
+			{
+				"index": 18810,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 66,
+				"enumval": "66 67 TV apparent power"
+			},
+			{
+				"index": 18811,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 67,
+				"enumval": "66 67 TV apparent power"
+			},
+			{
+				"index": 18812,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 68,
+				"enumval": "68 69 TV overfrequency"
+			},
+			{
+				"index": 18813,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 69,
+				"enumval": "68 69 TV overfrequency"
+			},
+			{
+				"index": 18814,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 70,
+				"enumval": "70 71 TV underfrequency"
+			},
+			{
+				"index": 18815,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 71,
+				"enumval": "70 71 TV underfrequency"
+			},
+			{
+				"index": 18816,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 72,
+				"enumval": "72 73 TV under power factor"
+			},
+			{
+				"index": 18817,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 73,
+				"enumval": "72 73 TV under power factor"
+			},
+			{
+				"index": 18818,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 74,
+				"enumval": "74 75 TV over power factor"
+			},
+			{
+				"index": 18819,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 75,
+				"enumval": "74 75 TV over power factor"
+			},
+			{
+				"index": 18820,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 76,
+				"enumval": "76 77 TV THD current"
+			},
+			{
+				"index": 18821,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 77,
+				"enumval": "76 77 TV THD current"
+			},
+			{
+				"index": 18822,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 78,
+				"enumval": "78 79 TV THD voltage"
+			},
+			{
+				"index": 18823,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 79,
+				"enumval": "78 79 TV THD voltage"
+			},
+			{
+				"index": 18824,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 80,
+				"enumval": "80 81 TV peak factor"
+			},
+			{
+				"index": 18825,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 81,
+				"enumval": "- 80 81 TV peak factor"
+			},
+			{
+				"index": 18826,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 82,
+				"enumval": "82 83 TV form factor"
+			},
+			{
+				"index": 18827,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 83,
+				"enumval": "- 82 83 TV form factor"
+			},
+			{
+				"index": 18828,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 84,
+				"enumval": "84 85 TV active power in normal direction"
+			},
+			{
+				"index": 18829,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 85,
+				"enumval": "- 84 85 TV active power in normal direction"
+			},
+			{
+				"index": 18830,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 86,
+				"enumval": "86 87 TV active power in reverse direction"
+			},
+			{
+				"index": 18831,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 87,
+				"enumval": "- 86 87 TV active power in reverse direction"
+			},
+			{
+				"index": 18832,
+				"catalog": "bits",
+				"bitoffset": 80,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Source of 1st tripping operation",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18833,
+				"catalog": "enum",
+				"bitoffset": 80,
+				"bitcount": 8,
+				"enumkey": 14,
+				"enumval": "14 = Meter. function/M. PLUS"
+			},
+			{
+				"index": 18834,
+				"catalog": "enum",
+				"bitoffset": 80,
+				"bitcount": 8,
+				"enumkey": 25,
+				"enumval": "25 = Trip unit"
+			},
+			{
+				"index": 18835,
+				"catalog": "bits",
+				"bitoffset": 88,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "8 ！ Reserved 0x00",
+				"datatype": ""
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format15",
+		"padding": [
+			{
+				"index": 18836,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Year",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18837,
+				"catalog": "bits",
+				"bitoffset": 8,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Month",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18838,
+				"catalog": "bits",
+				"bitoffset": 16,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Day",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18839,
+				"catalog": "bits",
+				"bitoffset": 24,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Hour",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18840,
+				"catalog": "bits",
+				"bitoffset": 32,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Minute",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18841,
+				"catalog": "bits",
+				"bitoffset": 40,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Seconds",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18842,
+				"catalog": "bits",
+				"bitoffset": 48,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Low-order digits of milliseconds",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18843,
+				"catalog": "bits",
+				"bitoffset": 56,
+				"bitcount": 4,
+				"unit": "",
+				"scaling": "",
+				"desc": "Weekday (1 =Sunday, ..., 7 = Saturday) 0 - 3",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18844,
+				"catalog": "bits",
+				"bitoffset": 60,
+				"bitcount": 4,
+				"unit": "",
+				"scaling": "",
+				"desc": "Higher-order digits of milliseconds (4MSB) 4 - 7",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18845,
+				"catalog": "bits",
+				"bitoffset": 64,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "8 ！ Reserved 0x00",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18846,
+				"catalog": "bits",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Reason for tripping operation",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18847,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "1 = overload"
+			},
+			{
+				"index": 18848,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 2,
+				"enumval": "2 = instantaneous Short circuit"
+			},
+			{
+				"index": 18849,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 3,
+				"enumval": "3 = delayed Short-circuit"
+			},
+			{
+				"index": 18850,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 4,
+				"enumval": "4 = Ground fault"
+			},
+			{
+				"index": 18851,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 5,
+				"enumval": "5 = Ext. protection function"
+			},
+			{
+				"index": 18852,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 6,
+				"enumval": "6 = Overload N-conductor"
+			},
+			{
+				"index": 18853,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 7,
+				"enumval": "7 = ETU self-protection (analog override)"
+			},
+			{
+				"index": 18854,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 8,
+				"enumval": "8 = Overtemperature"
+			},
+			{
+				"index": 18855,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 20,
+				"enumval": "20 = Unbalance Current"
+			},
+			{
+				"index": 18856,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 21,
+				"enumval": "21 = Unbalance Voltage"
+			},
+			{
+				"index": 18857,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 22,
+				"enumval": "22 = Active power in normal dir."
+			},
+			{
+				"index": 18858,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 23,
+				"enumval": "23 = Active power in reverse dir."
+			},
+			{
+				"index": 18859,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 24,
+				"enumval": "24 = Overvoltage"
+			},
+			{
+				"index": 18860,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 25,
+				"enumval": "25 = Undervoltage"
+			},
+			{
+				"index": 18861,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 26,
+				"enumval": "26 = Overfrequency"
+			},
+			{
+				"index": 18862,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 27,
+				"enumval": "27 = Underfrequency"
+			},
+			{
+				"index": 18863,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 28,
+				"enumval": "28 = THD current"
+			},
+			{
+				"index": 18864,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 29,
+				"enumval": "29 = THD voltage"
+			},
+			{
+				"index": 18865,
+				"catalog": "enum",
+				"bitoffset": 72,
+				"bitcount": 8,
+				"enumkey": 30,
+				"enumval": "30 = Change in phase dir. of rot."
+			},
+			{
+				"index": 18866,
+				"catalog": "bits",
+				"bitoffset": 80,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Source of 1st tripping operation",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18867,
+				"catalog": "enum",
+				"bitoffset": 80,
+				"bitcount": 8,
+				"enumkey": 14,
+				"enumval": "14 = Meter. function/M. PLUS"
+			},
+			{
+				"index": 18868,
+				"catalog": "enum",
+				"bitoffset": 80,
+				"bitcount": 8,
+				"enumkey": 25,
+				"enumval": "25 = Trip unit"
+			},
+			{
+				"index": 18869,
+				"catalog": "bits",
+				"bitoffset": 88,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "8 ！ Reserved 0x00",
+				"datatype": "BITS"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "time",
+		"padding": [
+			{
+				"index": 18870,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Year",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18871,
+				"catalog": "bits",
+				"bitoffset": 8,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Month",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18872,
+				"catalog": "bits",
+				"bitoffset": 16,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Day",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18873,
+				"catalog": "bits",
+				"bitoffset": 24,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Hour",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18874,
+				"catalog": "bits",
+				"bitoffset": 32,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Minute",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18875,
+				"catalog": "bits",
+				"bitoffset": 40,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Seconds",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18876,
+				"catalog": "bits",
+				"bitoffset": 48,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Low-order digits of milliseconds",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18877,
+				"catalog": "bits",
+				"bitoffset": 56,
+				"bitcount": 4,
+				"unit": "",
+				"scaling": "",
+				"desc": "Weekday (1 =Sunday, ..., 7 = Saturday) 0 - 3",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18878,
+				"catalog": "bits",
+				"bitoffset": 60,
+				"bitcount": 4,
+				"unit": "",
+				"scaling": "",
+				"desc": "Higher-order digits of milliseconds (4MSB) 4 - 7",
+				"datatype": "BITS"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format24_328",
+		"padding": [
+			{
+				"index": 18879,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "",
+				"datatype": "FORMAT24"
+			},
+			{
+				"index": 18880,
+				"catalog": "bits",
+				"bitoffset": 8,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "",
+				"datatype": "FORMAT328"
+			},
+			{
+				"index": 18881,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 0 Disconnected position",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18882,
+				"catalog": "bits",
+				"bitoffset": 1,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 1 Connected position",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18883,
+				"catalog": "bits",
+				"bitoffset": 2,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 2 Test position",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18884,
+				"catalog": "bits",
+				"bitoffset": 3,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 3 Switch not available",
+				"datatype": "BITS"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format328",
+		"padding": [
+			{
+				"index": 18885,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Status of the circuit breaker",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18886,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 Circuit breaker open"
+			},
+			{
+				"index": 18887,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 Circuit breaker closed"
+			},
+			{
+				"index": 18888,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 2,
+				"enumval": "0 2 Circuit breaker has tripped (trip alarm switch)"
+			},
+			{
+				"index": 18889,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 3,
+				"enumval": "0 3 Circuit breaker ready to close"
+			},
+			{
+				"index": 18890,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 4,
+				"enumval": "0 4 Spring energy store charged"
+			},
+			{
+				"index": 18891,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 5,
+				"enumval": "0 5 First auxiliary release (shunt trip) operated"
+			},
+			{
+				"index": 18892,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 6,
+				"enumval": "0 6 Second auxiliary release (UVR) operated"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format343",
+		"padding": [
+			{
+				"index": 18893,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "I2t characteristic for short-time delayed overcurrent",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18894,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 I2t characteristic for delayed short-circuit protection switched off (default)."
+			},
+			{
+				"index": 18895,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 I2t characteristic for delayed short-circuit protection switched on."
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format344",
+		"padding": [
+			{
+				"index": 18896,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "I2t characteristic for ground-fault protection",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18897,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 I2t characteristic for ground-fault protection switched off (default)."
+			},
+			{
+				"index": 18898,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 I2t characteristic for ground-fault protection switched on."
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format345",
+		"padding": [
+			{
+				"index": 18899,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "I4t characteristic for Long-time_Overload protection",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18900,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 I4t characteristic for long-time/overload protection switched off (default)."
+			},
+			{
+				"index": 18901,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 I4t characteristic for overload protection switched on."
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format346",
+		"padding": [
+			{
+				"index": 18902,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Thermal memory",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18903,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 Thermal memory deactivated (default)"
+			},
+			{
+				"index": 18904,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 Thermal memory activated"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format347",
+		"padding": [
+			{
+				"index": 18905,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Phase loss sensitivity",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18906,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 Phase loss sensitivity deactivated (default)"
+			},
+			{
+				"index": 18907,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 Phase loss sensitivity activated"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format370",
+		"padding": [
+			{
+				"index": 18908,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Active parameter set",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18909,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 Parameter set A active"
+			},
+			{
+				"index": 18910,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 Parameter set B active"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format373",
+		"padding": [
+			{
+				"index": 18911,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Phase number",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18912,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 Phase L1"
+			},
+			{
+				"index": 18913,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 Phase L2"
+			},
+			{
+				"index": 18914,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 2,
+				"enumval": "0 2 Phase L3"
+			},
+			{
+				"index": 18915,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 3,
+				"enumval": "0 3 Neutral conductor"
+			},
+			{
+				"index": 18916,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 4,
+				"enumval": "0 4 Ground-fault"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "4.6.8Dataformats401to478",
+		"padding": []
+	},
+	{
+		"segment": "format",
+		"group": "Format401",
+		"padding": [
+			{
+				"index": 18917,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Trip unit, Trips lastunacknowledged trip",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18918,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0x00 No trip"
+			},
+			{
+				"index": 18919,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 0x01 Overload/long-time (L)"
+			},
+			{
+				"index": 18920,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 2,
+				"enumval": "0 0x02 Instantaneous trip (I)"
+			},
+			{
+				"index": 18921,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 4,
+				"enumval": "0 0x04 Short-time delay trip (S)"
+			},
+			{
+				"index": 18922,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 8,
+				"enumval": "0 0x08 Ground-fault (G)"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format402",
+		"padding": [
+			{
+				"index": 18923,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"unit": "",
+				"scaling": "",
+				"desc": "Warnings",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18924,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 0 Overload",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18925,
+				"catalog": "bits",
+				"bitoffset": 1,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 1 Overload neutral conductor",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18926,
+				"catalog": "bits",
+				"bitoffset": 2,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 2 Load shed threshold",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18927,
+				"catalog": "bits",
+				"bitoffset": 3,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 3 Load pickup level",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18928,
+				"catalog": "bits",
+				"bitoffset": 4,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 4 Phase unbalance current",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18929,
+				"catalog": "bits",
+				"bitoffset": 5,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 5 Microprocessor error",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18930,
+				"catalog": "bits",
+				"bitoffset": 6,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 6 Ground-fault",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18931,
+				"catalog": "bits",
+				"bitoffset": 7,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "0 7 Overtemperature",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18932,
+				"catalog": "bits",
+				"bitoffset": 8,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "1 0 Leading signal of overload trip",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18933,
+				"catalog": "bits",
+				"bitoffset": 9,
+				"bitcount": 1,
+				"unit": "",
+				"scaling": "",
+				"desc": "1 1 Average current",
+				"datatype": "BITS"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format405",
+		"padding": [
+			{
+				"index": 18934,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Contact condition",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18935,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 No maintenance necessary yet on main contacts Note:Despite this, the main contacts must be checked after every overcurrent tripping operation."
+			},
+			{
+				"index": 18936,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 Perform immediate visual inspection on main contacts."
+			},
+			{
+				"index": 18937,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 2,
+				"enumval": "0 2 Prepare maintenance of the main contacts."
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format406",
+		"padding": [
+			{
+				"index": 18938,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"unit": "",
+				"scaling": "",
+				"desc": "Control trip unit",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18939,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 2,
+				"enumval": "0 / 1 0x0002 Delete last trip message in trip unit"
+			},
+			{
+				"index": 18940,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 16,
+				"enumkey": 34,
+				"enumval": "0 / 1 0x0022 Reset counter and statistical information of the trip unit"
+			}
+		]
+	},
+	{
+		"segment": "format",
+		"group": "Format410",
+		"padding": [
+			{
+				"index": 18941,
+				"catalog": "bits",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"unit": "",
+				"scaling": "",
+				"desc": "Ground-fault sensing method",
+				"datatype": "BITS"
+			},
+			{
+				"index": 18942,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 0,
+				"enumval": "0 0 GF sensing with external iron-core CT"
+			},
+			{
+				"index": 18943,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 1,
+				"enumval": "0 1 GF sensing via residual method (vector summation)"
+			},
+			{
+				"index": 18944,
+				"catalog": "enum",
+				"bitoffset": 0,
+				"bitcount": 8,
+				"enumkey": 2,
+				"enumval": "0 2 Reserved"
+			}
+		]
+	}
+]
